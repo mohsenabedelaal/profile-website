@@ -1,6 +1,6 @@
 var api = 'https://script.google.com/macros/s/AKfycbz1dgN3iYI07HIzfhLiXLrEo9vasu98tPr0CjTQXVHhMkDRpYpO-BWsBOJqt94hXaaMNA/exec'
 
-// update 77 
+// update 2022
 // var cv = {
 //     general: {
 //         website_name: document.getElementById('website_name'),
