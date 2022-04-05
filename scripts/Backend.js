@@ -50,6 +50,14 @@ function LoadFromDB() {
         document.getElementById('tw').href = data.contact.tw
         document.getElementById('gh').href = data.contact.gh
         document.getElementById('li').href = data.contact.li
+
+        document.getElementById('age').innerText = data.personal.age
+        document.getElementById('email').innerText = data.contact.email
+        document.getElementById('number').innerText = data.contact.number
+        document.getElementById('location').innerText = data.contact.location
+        
+        document.getElementById('lang').innerText = data.contact.lang
+        document.getElementById('nabtha').innerText = data.personal.about
         createskill(data.skills)
     })
 }
