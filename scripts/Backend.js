@@ -103,7 +103,7 @@ function createskill(allskills) {
 }
 function createprojects(projects) {
     var box = document.getElementById('pbox')
-    projects.forEach(p => {
+    projects.forEach(proj => {
 
         var div = document.createElement('div')
         div.classList.add('card')
@@ -113,19 +113,19 @@ function createprojects(projects) {
         var img = document.createElement('img')
         img.classList.add('card-img-top')
         img.classList.add('mt-2')
-        img.src = p.image
-        img.alt = p.title
+        img.src = proj.image
+        img.alt = proj.title
 
         var h5 = document.createElement('h5')
         h5.classList.add('card-title')
         h5.classList.add('mt-1')
-        h5.innerText = p.title
+        h5.innerText = proj.title
 
         var p = document.createElement('p')
         p.classList.add('card-text')
         p.classList.add('mt-1')
         p.classList.add('mb-2')
-        p.innerText = p.category
+        p.innerText = proj.category
 
         div.appendChild(img)
         div.appendChild(h5)
