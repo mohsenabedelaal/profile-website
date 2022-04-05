@@ -1,4 +1,4 @@
-var api = 'https://script.google.com/macros/s/AKfycbz1dgN3iYI07HIzfhLiXLrEo9vasu98tPr0CjTQXVHhMkDRpYpO-BWsBOJqt94hXaaMNA/exec'
+var api = 'https://script.google.com/macros/s/AKfycbzgQ9w2UG5lqzv8elFVbzyoxBGRU9aeDIybJULam2PVGuP6oaJbMKA5M5G6GjM9YbF-1Q/exec'
 
 // update 2022
 // var cv = {
