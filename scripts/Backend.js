@@ -33,11 +33,10 @@ var api = 'https://script.google.com/macros/s/AKfycbyxGXTQj4It4VMf0qksXq6DLmg1wV
 
 // }
 var data = {}
-
+var spinner = document.getElementById('loader')
 function LoadFromDB() {
     //step 1 is to fetch data from gsheets
     fetch(api).then(res => res.json()).then(res => {
-        // turn off the spinner 
         
         console.log(res)
         data = res
@@ -58,10 +57,12 @@ function LoadFromDB() {
         document.getElementById('number').innerText = data.contact.number
         document.getElementById('location').innerText = data.contact.location
 
-        document.getElementById('lang').innerText = data.contact.lang
+        document.getElementById('lang').innerText = data.personal.lang
         document.getElementById('nabtha').innerText = data.personal.about
         createskill(data.skills)
         createprojects(data.projects)
+        // turn off the spinner 
+        spinner.style.display = 'none'
     })
 }
 

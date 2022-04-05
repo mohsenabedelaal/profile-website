@@ -14,7 +14,7 @@
 </head>
 
 <body id="top" onload="LoadFromDB()">
-    <div class="loader">
+    <div id="loader" class="loader">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="spinner">
@@ -383,7 +383,7 @@
         <script src="scripts/main.js?ver=1.1.0"></script>+
         <script>
             jQuery(window).on('load', function() {
-                jQuery('.loader').fadeOut(500);
+                jQuery('.loader').fadeOut(40000000);
             });
         </script>
 </body>
