@@ -37,6 +37,8 @@ var data = {}
 function LoadFromDB() {
     //step 1 is to fetch data from gsheets
     fetch(api).then(res => res.json()).then(res => {
+        // turn off the spinner 
+        
         console.log(res)
         data = res
         console.log('data = ', data)
@@ -55,10 +57,11 @@ function LoadFromDB() {
         document.getElementById('email').innerText = data.contact.email
         document.getElementById('number').innerText = data.contact.number
         document.getElementById('location').innerText = data.contact.location
-        
+
         document.getElementById('lang').innerText = data.contact.lang
         document.getElementById('nabtha').innerText = data.personal.about
         createskill(data.skills)
+        createprojects(data.projects)
     })
 }
 
@@ -98,20 +101,36 @@ function createskill(allskills) {
 
 
 }
-function test(){
-    // alert('test')
-    // var a ;
-    var box = document.getElementById('projects-box')
-    var temp = document.getElementById('temp')
-    // var clon = temp.content.cloneNode(true);
-    // console.log(clone)
-    var div = temp.content.querySelector(".h4");
-    div.innerText = 'test'
-    var clone =  temp.content.cloneNode(true);
-    clone.classList.add('visibility') = 'visible'
-    // a = document.importNode(div, true);
-    // a.textContent = 'hello'
-    box.appendChild(clone)
+function createprojects(projects) {
+    var box = document.getElementById('pbox')
+    projects.forEach(p => {
 
-    console.log(clone)
+        var div = document.createElement('div')
+        div.classList.add('card')
+        div.classList.add('col-md-4')
+        div.style.width = '18rem'
+
+        var img = document.createElement('img')
+        img.classList.add('card-img-top')
+        img.classList.add('mt-2')
+        img.src = p.image
+        img.alt = p.title
+
+        var h5 = document.createElement('h5')
+        h5.classList.add('card-title')
+        h5.classList.add('mt-1')
+        h5.innerText = p.title
+
+        var p = document.createElement('p')
+        p.classList.add('card-text')
+        p.classList.add('mt-1')
+        p.classList.add('mb-2')
+        p.innerText = p.category
+
+        div.appendChild(img)
+        div.appendChild(h5)
+        div.appendChild(p)
+        box.appendChild(div)
+    });
+    
 }
