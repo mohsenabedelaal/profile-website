@@ -14,7 +14,17 @@
 </head>
 
 <body id="top" onload="LoadFromDB()">
-
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="profile-page sidebar-collapse">
             <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
@@ -370,7 +380,12 @@
         <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
         <script src="js/now-ui-kit.js?ver=1.1.0"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/main.js?ver=1.1.0"></script>
+        <script src="scripts/main.js?ver=1.1.0"></script>+
+        <script>
+            jQuery(window).on('load', function() {
+                jQuery('.loader').fadeOut(500);
+            });
+        </script>
 </body>
 
 </html>
