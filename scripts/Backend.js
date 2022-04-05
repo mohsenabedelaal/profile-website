@@ -98,3 +98,20 @@ function createskill(allskills) {
 
 
 }
+function test(){
+    // alert('test')
+    // var a ;
+    var box = document.getElementById('projects-box')
+    var temp = document.getElementById('temp')
+    // var clon = temp.content.cloneNode(true);
+    // console.log(clone)
+    var div = temp.content.querySelector(".h4");
+    div.innerText = 'test'
+    var clone =  temp.content.cloneNode(true);
+    clone.classList.add('visibility') = 'visible'
+    // a = document.importNode(div, true);
+    // a.textContent = 'hello'
+    box.appendChild(clone)
+
+    console.log(clone)
+}
