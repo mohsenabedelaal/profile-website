@@ -34,10 +34,11 @@ var api = 'https://script.google.com/macros/s/AKfycbyxGXTQj4It4VMf0qksXq6DLmg1wV
 // }
 var data = {}
 var spinner = document.getElementById('loader')
+
 function LoadFromDB() {
     //step 1 is to fetch data from gsheets
     fetch(api).then(res => res.json()).then(res => {
-        
+
         console.log(res)
         data = res
         console.log('data = ', data)
@@ -61,7 +62,7 @@ function LoadFromDB() {
         document.getElementById('nabtha').innerText = data.personal.about
         createskill(data.skills)
         createprojects(data.projects)
-        // turn off the spinner 
+            // turn off the spinner 
         spinner.style.display = 'none'
     })
 }
@@ -74,16 +75,35 @@ function createskill(allskills) {
 
     allskills.forEach(s => {
 
+        var colprogress = document.createElement('div')
+
+        var skillbox = document.createElement('div')
+
+
+        var eachprogress = document.createElement('div')
+        eachprogress.classList.add('progress-container')
+        eachprogress.classList.add('progress-primary')
+
         var skillname = document.createElement('span')
         skillname.innerText = s.name
         skillname.classList.add('progress-badge')
 
         var skillprogress = document.createElement('div')
+        skillprogress.setAttribute("class", "progress");
 
         var skillprogressbar = document.createElement('div')
         skillprogressbar.ariaValueNow = s.perc
         skillprogressbar.classList.add('progress-bar')
         skillprogressbar.classList.add('progress-bar-primary')
+        skillprogressbar.setAttribute("data-aos", "progress-full");
+        skillprogressbar.setAttribute("data-aos-offset", "10");
+        skillprogressbar.setAttribute("data-aos-duration", "2000");
+        skillprogressbar.setAttribute("role", "progressbar");
+        skillprogressbar.setAttribute("aria-valuenow", s.perc);
+        skillprogressbar.setAttribute("aria-valuemin", "0");
+        skillprogressbar.setAttribute("aria-valuemax", "100");
+        skillprogressbar.setAttribute("style", "width: 80%;");
+
 
 
         var skillperc = document.createElement('span')
@@ -102,6 +122,7 @@ function createskill(allskills) {
 
 
 }
+
 function createprojects(projects) {
     var box = document.getElementById('pbox')
     projects.forEach(proj => {
@@ -133,5 +154,5 @@ function createprojects(projects) {
         div.appendChild(p)
         box.appendChild(div)
     });
-    
+
 }

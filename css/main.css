@@ -17,9 +17,7 @@
     width: 70px;
     position: absolute;
     text-align: center;
-    /* position: relative; */
     top: 20rem;
-    /* bottom: 0; */
     right: 0;
     border-radius: 50%;
     left: 0;
@@ -28,7 +26,7 @@
 .spinner>div {
     width: 18px;
     height: 18px;
-    background-color: #000;
+    background-color: rgb(198, 142, 63);
     border-radius: 100%;
     display: inline-block;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -116,7 +114,8 @@
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-brown,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-brown {
     color: #fff;
-    background: #378C3F;
+    background: rgb(198, 142, 63);
+    ;
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-blue,
@@ -290,7 +289,8 @@
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-brown~.bootstrap-switch-default {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-blue~.bootstrap-switch-default {
@@ -620,7 +620,8 @@
 
 .slider.slider-primary .noUi-connect,
 .slider.slider-primary.noUi-connect {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .slider.slider-primary.noUi-target {
@@ -628,7 +629,8 @@
 }
 
 .slider.slider-primary .noUi-handle {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .slider.slider-info .noUi-connect,
@@ -709,7 +711,8 @@
 }
 
 .datepicker.datepicker-primary {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker.datepicker-primary th,
@@ -719,11 +722,13 @@
 }
 
 .datepicker.datepicker-primary:after {
-    border-bottom-color: #378C3F;
+    border-bottom-color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker.datepicker-primary.datepicker-orient-top:after {
-    border-top-color: #378C3F;
+    border-top-color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker.datepicker-primary .dow {
@@ -754,7 +759,8 @@
 .datepicker.datepicker-primary table tr td.active.disabled div,
 .datepicker.datepicker-primary table tr td.active.disabled:hover div {
     background-color: #FFFFFF;
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker.datepicker-primary table tr td.day:hover div,
@@ -825,7 +831,8 @@
 .datepicker.datepicker-primary table tr td span.active:hover[disabled],
 .datepicker.datepicker-primary table tr td span.active.disabled[disabled],
 .datepicker.datepicker-primary table tr td span.active.disabled:hover[disabled] {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker-inline {
@@ -933,7 +940,8 @@
 }
 
 .datepicker th {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .table-condensed>tbody>tr>td,
@@ -1140,7 +1148,8 @@
 .datepicker table tr td.active:hover div,
 .datepicker table tr td.active.disabled div,
 .datepicker table tr td.active.disabled:hover div {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
     color: #FFFFFF;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -1165,7 +1174,8 @@
 .datepicker table tr td.active:hover[disabled] div,
 .datepicker table tr td.active.disabled[disabled] div,
 .datepicker table tr td.active.disabled:hover[disabled] div {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker table tr td.active:active,
@@ -1208,7 +1218,8 @@
 .datepicker table tr td span.active.disabled,
 .datepicker table tr td span.active.disabled:hover {
     color: #fff;
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .datepicker table tr td span.active:hover,
@@ -1231,7 +1242,8 @@
 .datepicker table tr td span.active:hover[disabled],
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -1557,7 +1569,8 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 }
 
 .btn-primary {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
     color: #FFFFFF;
 }
 
@@ -1605,13 +1618,17 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #378C3F;
-    border-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
+    border-color: rgb(198, 142, 63);
+    ;
 }
 
 .btn-primary.btn-simple {
-    color: #378C3F;
-    border-color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
+    border-color: rgb(198, 142, 63);
+    ;
 }
 
 .btn-primary.btn-simple:hover,
@@ -1624,7 +1641,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary.btn-link {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .btn-primary.btn-link:hover,
@@ -1958,7 +1976,8 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-neutral {
     background-color: #FFFFFF;
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .btn-neutral:hover,
@@ -2270,7 +2289,8 @@ fieldset[disabled] .btn-link.active {
 }
 
 .form-control:focus {
-    border: 1px solid #378C3F;
+    border: 1px solid rgb(198, 142, 63);
+    ;
     box-shadow: none;
     outline: 0 !important;
     color: #2c2c2c;
@@ -2278,7 +2298,8 @@ fieldset[disabled] .btn-link.active {
 
 .form-control:focus+.input-group-addon,
 .form-control:focus~.input-group-addon {
-    border: 1px solid #378C3F;
+    border: 1px solid rgb(198, 142, 63);
+    ;
     border-right: none;
     background-color: transparent;
 }
@@ -2504,7 +2525,8 @@ fieldset[disabled] .btn-link.active {
 
 .input-group-focus .input-group-addon {
     background-color: #FFFFFF;
-    border-color: #378C3F;
+    border-color: rgb(198, 142, 63);
+    ;
 }
 
 .input-group-focus.form-group-no-border .input-group-addon {
@@ -2812,16 +2834,18 @@ textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-    background: rgba(55, 140, 63, 0.4);
+    background: rgb(198, 142, 63, 0.4);
 }
 
 .progress-container.progress-primary .progress-bar {
-    background: #378C3F;
+    background: rgb(198, 142, 63);
+    ;
 }
 
 .progress-container.progress-primary .progress-value,
 .progress-container.progress-primary .progress-badge {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .progress-container.progress-info .progress {
@@ -2905,8 +2929,10 @@ textarea.form-control:active {
 }
 
 .badge-primary {
-    border-color: #378C3F;
-    color: #378C3F;
+    border-color: rgb(198, 142, 63);
+    ;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .badge-info {
@@ -3007,8 +3033,10 @@ textarea.form-control:active {
 .pagination.pagination-primary .page-item.active>.page-link,
 .pagination.pagination-primary .page-item.active>.page-link:focus,
 .pagination.pagination-primary .page-item.active>.page-link:hover {
-    background-color: #378C3F;
-    border-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
+    border-color: rgb(198, 142, 63);
+    ;
 }
 
 .pagination.pagination-warning .page-item.active>.page-link,
@@ -3040,7 +3068,8 @@ textarea.form-control:active {
 .pagination.pagination-neutral .page-item.active>.page-link:hover {
     background-color: #FFFFFF;
     border-color: #FFFFFF;
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 button,
@@ -3065,12 +3094,14 @@ small {
 }
 
 a {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 a:hover,
 a:focus {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 h1,
@@ -3169,7 +3200,7 @@ p.description {
 }
 
 .text-primary {
-    color: #378C3F !important;
+    color: rgb(198, 142, 63)!important;
 }
 
 .text-info {
@@ -3207,12 +3238,15 @@ p.description {
 }
 
 .blockquote.blockquote-primary {
-    border-color: #378C3F;
-    color: #378C3F;
+    border-color: rgb(198, 142, 63);
+    ;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .blockquote.blockquote-primary small {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .blockquote.blockquote-danger {
@@ -3298,7 +3332,8 @@ body {
 }
 
 .separator.separator-primary {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .nav-pills .nav-item .nav-link {
@@ -3346,13 +3381,15 @@ body {
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:hover {
     background-color: #FFFFFF;
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .nav-pills.nav-pills-primary .nav-item .nav-link.active,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active,
@@ -3479,8 +3516,10 @@ body {
 }
 
 .nav-tabs.nav-tabs-primary>.nav-item>.nav-link.active {
-    border-color: #378C3F;
-    color: #378C3F;
+    border-color: rgb(198, 142, 63);
+    ;
+    color: rgb(198, 142, 63);
+    ;
 }
 
 .nav-tabs.nav-tabs-info>.nav-item>.nav-link.active {
@@ -3664,7 +3703,7 @@ body {
 }
 
 .bg-primary {
-    background-color: #378C3F !important;
+    background-color: rgb(198, 142, 63) !important;
 }
 
 .bg-info {
@@ -4001,7 +4040,8 @@ img {
 }
 
 .popover.popover-primary {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .popover.popover-primary .popover-body {
@@ -4009,19 +4049,23 @@ img {
 }
 
 .popover.popover-primary.bs-popover-right .arrow:after {
-    border-left-color: #378C3F;
+    border-left-color: rgb(198, 142, 63);
+    ;
 }
 
 .popover.popover-primary.bs-popover-top .arrow:after {
-    border-top-color: #378C3F;
+    border-top-color: rgb(198, 142, 63);
+    ;
 }
 
 .popover.popover-primary.bs-popover-bottom .arrow:after {
-    border-bottom-color: #378C3F;
+    border-bottom-color: rgb(198, 142, 63);
+    ;
 }
 
 .popover.popover-primary.bs-popover-left .arrow:after {
-    border-right-color: #378C3F;
+    border-right-color: rgb(198, 142, 63);
+    ;
 }
 
 .popover.popover-primary .popover-header {
@@ -4756,7 +4800,8 @@ img {
 }
 
 .modal.modal-mini .modal-profile i {
-    color: #378C3F;
+    color: rgb(198, 142, 63);
+    ;
     font-size: 21px;
 }
 
@@ -4765,7 +4810,8 @@ img {
 }
 
 .modal.modal-mini .modal-profile.modal-profile-primary {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .modal.modal-mini .modal-profile.modal-profile-danger {
@@ -4802,7 +4848,8 @@ img {
 }
 
 .modal.modal-primary .modal-content {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
     color: #FFFFFF;
 }
 
@@ -4890,7 +4937,8 @@ img {
 }
 
 .card[data-background-color="orange"] {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .card[data-background-color="red"] {
@@ -5458,7 +5506,7 @@ img {
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgb(233, 171, 31, 0.6));
     /* Standard syntax */
 }
 
@@ -5875,12 +5923,13 @@ img {
         transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
     }
     .sidebar-collapse .navbar-collapse:before {
-        background: #378C3F;
+        background: rgb(198, 142, 63);
+        ;
         /* For browsers that do not support gradients */
         /* For Safari 5.1 to 6.0 */
         /* For Opera 11.1 to 12.0 */
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#378C3F 0%, #000 80%);
+        background: linear-gradient(rgb(198, 142, 63) 0%, #000 80%);
         /* Standard syntax (must be last) */
         opacity: 0.76;
         filter: alpha(opacity=76);
@@ -6524,12 +6573,13 @@ img {
         transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
     }
     .burger-menu .navbar-collapse:before {
-        background: #378C3F;
+        background: rgb(198, 142, 63);
+        ;
         /* For browsers that do not support gradients */
         /* For Safari 5.1 to 6.0 */
         /* For Opera 11.1 to 12.0 */
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#378C3F 0%, #000 80%);
+        background: linear-gradient(rgb(198, 142, 63) 0%, #000 80%);
         /* Standard syntax (must be last) */
         opacity: 0.76;
         filter: alpha(opacity=76);
@@ -7197,7 +7247,7 @@ img {
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgb(233, 171, 31, 0.6));
     /* Standard syntax */
 }
 
@@ -7354,7 +7404,8 @@ img {
 }
 
 .cc-reference .carousel-indicators .active {
-    background-color: #378C3F;
+    background-color: rgb(198, 142, 63);
+    ;
 }
 
 .cc-reference .carousel-inner {
