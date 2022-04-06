@@ -116,6 +116,8 @@ function createskill(allskills) {
         document.getElementById('skillbox').appendChild(skillname)
         document.getElementById('skillbox').appendChild(skillprogress)
 
+        // document.getElementById('pskillbox').appendChild(document.getElementById('skillbox'))
+
 
 
     });
