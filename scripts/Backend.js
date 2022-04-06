@@ -60,70 +60,69 @@ function LoadFromDB() {
 
         document.getElementById('lang').innerText = data.personal.lang
         document.getElementById('nabtha').innerText = data.personal.about
-        createskill(data.skills)
+            // createskill(data.skills)
         createprojects(data.projects)
             // turn off the spinner 
         spinner.style.display = 'none'
     })
 }
 
-function createskill(allskills) {
-    // var skills = document.getElementById('skills')
-    var box = document.getElementById('skills-box')
+// function createskill(allskills) {
+// var skills = document.getElementById('skills')
+// var box = document.getElementById('skills-box')
 
-    // console.log(skills.firstChild)
+// console.log(skills.firstChild)
 
-    allskills.forEach(s => {
+//     allskills.forEach(s => {
 
-        var colprogress = document.createElement('div')
+//         var colprogress = document.createElement('div')
 
-        var skillbox = document.createElement('div')
-
-
-        var eachprogress = document.createElement('div')
-        eachprogress.classList.add('progress-container')
-        eachprogress.classList.add('progress-primary')
-
-        var skillname = document.createElement('span')
-        skillname.innerText = s.name
-        skillname.classList.add('progress-badge')
-
-        var skillprogress = document.createElement('div')
-        skillprogress.setAttribute("class", "progress");
-
-        var skillprogressbar = document.createElement('div')
-        skillprogressbar.ariaValueNow = s.perc
-        skillprogressbar.classList.add('progress-bar')
-        skillprogressbar.classList.add('progress-bar-primary')
-        skillprogressbar.setAttribute("data-aos", "progress-full");
-        skillprogressbar.setAttribute("data-aos-offset", "10");
-        skillprogressbar.setAttribute("data-aos-duration", "2000");
-        skillprogressbar.setAttribute("role", "progressbar");
-        skillprogressbar.setAttribute("aria-valuenow", s.perc);
-        skillprogressbar.setAttribute("aria-valuemin", "0");
-        skillprogressbar.setAttribute("aria-valuemax", "100");
-        skillprogressbar.setAttribute("style", "width: 80%;");
+//         var skillbox = document.createElement('div')
 
 
+//         var eachprogress = document.createElement('div')
+//         eachprogress.classList.add('progress-container')
+//         eachprogress.classList.add('progress-primary')
 
-        var skillperc = document.createElement('span')
-        skillperc.innerText = s.perc
-        skillperc.classList.add('progress-value')
+//         var skillname = document.createElement('span')
+//         skillname.innerText = s.name
+//         skillname.classList.add('progress-badge')
 
-        skillprogress.appendChild(skillprogressbar)
-        skillprogress.appendChild(skillperc)
+//         var skillprogress = document.createElement('div')
+//         skillprogress.setAttribute("class", "progress");
 
-        document.getElementById('skillbox').appendChild(skillname)
-        document.getElementById('skillbox').appendChild(skillprogress)
-
-        // document.getElementById('pskillbox').appendChild(document.getElementById('skillbox'))
+//         var skillprogressbar = document.createElement('div')
+//         skillprogressbar.ariaValueNow = s.perc
+//         skillprogressbar.classList.add('progress-bar')
+//         skillprogressbar.classList.add('progress-bar-primary')
+//         skillprogressbar.setAttribute("data-aos", "progress-full");
+//         skillprogressbar.setAttribute("data-aos-offset", "10");
+//         skillprogressbar.setAttribute("data-aos-duration", "2000");
+//         skillprogressbar.setAttribute("role", "progressbar");
+//         skillprogressbar.setAttribute("aria-valuenow", s.perc);
+//         skillprogressbar.setAttribute("aria-valuemin", "0");
+//         skillprogressbar.setAttribute("aria-valuemax", "100");
+//         skillprogressbar.setAttribute("style", "width: 80%;");
 
 
 
-    });
+//         var skillperc = document.createElement('span')
+//         skillperc.innerText = s.perc
+//         skillperc.classList.add('progress-value')
+
+//         skillprogress.appendChild(skillprogressbar)
+//         skillprogress.appendChild(skillperc)
+
+//         document.getElementById('skillbox').appendChild(skillname)
+//         document.getElementById('skillbox').appendChild(skillprogress)
 
 
-}
+
+
+//     });
+
+
+// }
 
 function createprojects(projects) {
     var box = document.getElementById('pbox')
