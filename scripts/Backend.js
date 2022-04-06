@@ -130,8 +130,10 @@ function createprojects(projects) {
 
         var div = document.createElement('div')
         div.classList.add('card')
-        div.classList.add('col-md-4')
-        div.style.width = '18rem'
+        div.classList.add('col-md-3')
+        div.classList.add('mr-2')
+        div.classList.add('ml-2')
+        div.style.width = '15rem'
 
         var img = document.createElement('img')
         img.classList.add('card-img-top')
