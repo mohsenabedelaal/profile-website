@@ -47,9 +47,6 @@ function LoadFromDB() {
         document.getElementById('h1').innerText = data.general.h1
         document.getElementById('h2').innerText = data.general.h2
         document.getElementById('cv').href = data.general.cv
-
-        document.getElementById('fb').href = data.contact.fb
-        document.getElementById('tw').href = data.contact.tw
         document.getElementById('gh').href = data.contact.gh
         document.getElementById('li').href = data.contact.li
 
@@ -65,6 +62,9 @@ function LoadFromDB() {
             // turn off the spinner 
         spinner.style.display = 'none'
     })
+
+    fetch('https://script.google.com/macros/s/AKfycbxk0ol26QH89YTWOViFNx9FdXsfrTZRGp7SZogSFSnreVTBq5Rs6FNgv-QqqeWHMGxu/exec')
+    .then(res=>res.json()).then(res=> console.log(res))
 }
 
 // function createskill(allskills) {

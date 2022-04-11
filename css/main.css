@@ -2353,7 +2353,7 @@ fieldset[disabled] .btn-link.active {
 
 .has-success:after,
 .has-danger:after {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Roboto', sans-serif;
     content: "\ea22";
     display: inline-block;
     position: absolute;
@@ -2646,7 +2646,7 @@ textarea.form-control:active {
 }
 
 .checkbox label::after {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Roboto', sans-serif;
     content: "\ea22";
     top: 0px;
     text-align: center;
@@ -3077,7 +3077,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -3270,7 +3270,7 @@ p.description {
 body {
     color: #2c2c2c;
     font-size: 14px;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
