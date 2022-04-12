@@ -42,29 +42,33 @@ function LoadFromDB() {
         console.log(res)
         data = res
         console.log('data = ', data)
-        document.getElementById('website_name').innerText = data.general.website_name
-        document.getElementById('logo').src = data.general.logo
-        document.getElementById('h1').innerText = data.general.h1
-        document.getElementById('h2').innerText = data.general.h2
-        document.getElementById('cv').href = data.general.cv
-        document.getElementById('gh').href = data.contact.gh
-        document.getElementById('li').href = data.contact.li
 
-        document.getElementById('age').innerText = data.personal.age
-        document.getElementById('email').innerText = data.contact.email
-        document.getElementById('number').innerText = data.contact.number
-        document.getElementById('location').innerText = data.contact.location
 
-        document.getElementById('lang').innerText = data.personal.lang
-        document.getElementById('nabtha').innerText = data.personal.about
+        
+        
             // createskill(data.skills)
-        createprojects(data.projects)
+        // createprojects(data.projects)
             // turn off the spinner 
-        spinner.style.display = 'none'
+        
     })
 
     fetch('https://script.google.com/macros/s/AKfycbxk0ol26QH89YTWOViFNx9FdXsfrTZRGp7SZogSFSnreVTBq5Rs6FNgv-QqqeWHMGxu/exec')
-    .then(res=>res.json()).then(res=> console.log(res))
+    .then(res=>res.json()).then(res=> {
+        data = res
+        console.log(res)
+        document.getElementById('website_name').innerText = data['header-content']['website-name']
+        document.getElementById('logo').src = data['header-content']['profile_pic']
+        document.getElementById('h1').innerText = data['header-content']['full_name']
+        document.getElementById('h2').innerText = data['header-content']['job_title']
+        document.getElementById('cv').href = data['header-content']['cv']
+        document.getElementById('email').innerText = data['about-me-content']['email']
+        document.getElementById('number').innerText = data['about-me-content']['phone_number']
+        document.getElementById('location').innerText = data['about-me-content']['location']
+        document.getElementById('lang').innerText = data['about-me-content']['language']
+        document.getElementById('nabtha').innerText = data['about-me-content']['about_me_details']
+        createprojects(data.projects)
+        spinner.style.display = 'none'
+    })
 }
 
 // function createskill(allskills) {

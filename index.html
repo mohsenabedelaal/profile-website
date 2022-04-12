@@ -14,10 +14,10 @@
 
 </head>
 
-<!-- <body id="top" onload="LoadFromDB()"> -->
+<body id="top" onload="LoadFromDB()">
 
-<body id="top">
-    <!-- <div id="loader" class="loader">
+<!-- <body id="top"> -->
+    <div id="loader" class="loader">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="spinner">
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <header>
         <div class="profile-page sidebar-collapse">
             <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
@@ -78,8 +78,6 @@
                         <div class="section">
                             <div class="container">
                                 <div class="button-container">
-                                    <!-- <a id="fb" class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a> -->
-                                    <!-- <a id="tw" class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a> -->
                                     <a id="gh" class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/mohsenabedelaal" rel="tooltip"
                                         title="Follow me on GitHub"><i class="fa fa-github"></i></a>
                                     <a id="li" class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" rel="tooltip"
@@ -97,7 +95,7 @@
                             <div class="col-lg-6 col-md-12">
                                 <div class="card-body">
                                     <div class="h4 mt-0 title">Profile</div>
-                                    <p id="nabtha">مرحبا أنا أحمد طلال أعمل كاخصائي موارد بشرية
+                                    <p id="nabtha">I am Mohsen a software engineer
                                     </p>
                                 </div>
                             </div>
@@ -115,7 +113,7 @@
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                                        <div id="location" class="col-sm-8">المملكة العربية السعودية</div>
+                                        <div id="location" class="col-sm-8">Lebanon</div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Language:</strong>
@@ -137,40 +135,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 ml-auto mr-auto">
-                                <div onclick="test()" class="h4 text-center mb-4 title text-uppercase">Projects</div>
+                                <div class="h4 text-center mb-4 title text-uppercase">Projects</div>
                             </div>
                         </div>
                         <div class="gallery mt-5">
 
-                            <div id="pbox" class="projects row">
+                            <div id="pbox" class="projects row justify-content-center">
                             </div>
-                            <div class="">
-                                <div class="ml-auto mr-auto">
-                                    <div id="projects-box" class="row">
-                                        <!-- loop here  -->
-                                        <template id="temp">
-                                            <div class="col-md-6">
-                                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                                    data-aos-anchor-placement="top-bottom">
-                                                    <a href="#">
-                                                        <figure class="cc-effect">
-                                                            <img src="images/project-1.jpg" alt="Image" />
-                                                            <figcaption>
-                                                                <div class="h4">الموارد البشرية عبر اكسل</div>
-                                                                <p>نظام</p>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </a>
-
-                                                </div>
-                                            </div>
-
-                                        </template>
-
-                                        <!-- loop end -->
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -345,7 +317,7 @@
 
 
         <!-- jQuery and JS bundle w/ Popper.js -->
-        <!-- <script src="./scripts/Backend.js"></script> -->
+        <script src="./scripts/Backend.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"
             integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK"
@@ -354,9 +326,9 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="scripts/main.js?ver=1.1.0"></script>+
         <script>
-            /*jQuery(window).on('load', function() {
+            jQuery(window).on('load', function() {
                 jQuery('.loader').fadeOut(40000000);
-            });*/
+            });
         </script>
 </body>
 
