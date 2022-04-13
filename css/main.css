@@ -54,6 +54,19 @@
 
 /* end loader */
 
+
+.toggle-nav-bar-view{
+    direction: rtl;
+}
+
+@media screen and (min-width: 992px) {
+    .toggle-nav-bar-view{
+        direction: ltr;
+    }
+}
+
+
+
 .bootstrap-switch {
     display: inline-block;
     direction: rtl;
