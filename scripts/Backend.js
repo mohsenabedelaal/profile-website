@@ -1,5 +1,5 @@
-var api =
-  "https://script.google.com/macros/s/AKfycbyxGXTQj4It4VMf0qksXq6DLmg1wVXDLzT6spU97zhiNJ5HJwL9A90-TyXONl2qX_jZaQ/exec";
+var api ="https://script.google.com/macros/s/AKfycbxk0ol26QH89YTWOViFNx9FdXsfrTZRGp7SZogSFSnreVTBq5Rs6FNgv-QqqeWHMGxu/exec"
+  // "https://script.google.com/macros/s/AKfycbyxGXTQj4It4VMf0qksXq6DLmg1wVXDLzT6spU97zhiNJ5HJwL9A90-TyXONl2qX_jZaQ/exec";
 
 // update 2022
 // var cv = {
@@ -37,17 +37,17 @@ var spinner = document.getElementById("loader");
 
 function LoadFromDB() {
   //step 1 is to fetch data from gsheets
-  fetch(api)
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-      data = res;
-      console.log("data = ", data);
+  // fetch(api)
+  //   .then((res) => res.json())
+  //   .then((res) => {
+  //     console.log(res);
+  //     data = res;
+  //     console.log("data = ", data);
 
-      // createskill(data.skills)
-      // createprojects(data.projects)
-      // turn off the spinner
-    });
+  //     // createskill(data.skills)
+  //     // createprojects(data.projects)
+  //     // turn off the spinner
+  //   });
 
   fetch(
     "https://script.google.com/macros/s/AKfycbxk0ol26QH89YTWOViFNx9FdXsfrTZRGp7SZogSFSnreVTBq5Rs6FNgv-QqqeWHMGxu/exec"
@@ -56,8 +56,8 @@ function LoadFromDB() {
     .then((res) => {
       data = res;
       console.log(res);
-    //   document.getElementById("website_name").innerText =
-    //     data["header-content"]["website-name"];
+      document.getElementById("website_name").innerText =
+        data["header-content"]["website-name"];
       document.getElementById("logo").src =
         data["header-content"]["profile_pic"];
       document.getElementById("h1").innerText =
@@ -300,6 +300,51 @@ function createskill() {
 // // })
 
 // }
+
+function testing(){
+  let experience_container = document.getElementById("experience")
+  let experience_card = document.createElement("div")
+  experience_card.classList.add('card')
+  let row = document.createElement("div")
+  row.classList.add("row")
+  let col = document.createElement("div")
+  col.classList.add("col-md-3")
+  col.classList.add("bg-primary")
+  col.setAttribute("data-aos","fade-right")
+  col.setAttribute("data-aos-offset","50")
+  col.setAttribute("data-aos-duration","500")
+  let card_body = document.createElement("div")
+  card_body.classList.add("card-body")
+  card_body.classList.add("cc-experience-header")
+  let p_card_body = document.createElement("p")
+  p_card_body.innerText = "dasdasdsasa"
+  let h5_card_body = document.createElement("div")
+  h5_card_body.classList.add("h5")
+  h5_card_body.innerText = "dasdsa"
+  let col_2 = document.createElement("div")
+  col_2.classList.add("col-md-9")
+  col_2.setAttribute("data-aos","fade-left")
+  col_2.setAttribute("data-aos-offset","50")
+  col_2.setAttribute("data-aos-duration","500")
+  let card_body_2 = document.createElement("div")
+  card_body_2.classList.add("card-body")
+  let h5_card_body_2 = document.createElement("div")
+  h5_card_body_2.classList.add("h5")
+  h5_card_body_2.innerText = "dasdsadas"
+  let p_card_body_2 = document.createElement("p")
+  p_card_body_2.innerText = "Dasdsadsadasdsa"
+  card_body.appendChild(p_card_body)
+  card_body.appendChild(h5_card_body)
+  col.appendChild(card_body)
+  card_body_2.appendChild(p_card_body_2)
+  card_body_2.appendChild(h5_card_body_2)
+  col_2.appendChild(card_body_2)
+  row.appendChild(col)
+  row.appendChild(col_2)
+  experience_container.appendChild(row)
+
+}
+
 
 // <div class="card" id="experience-card">
 //                             <div class="row">
