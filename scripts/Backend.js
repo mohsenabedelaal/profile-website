@@ -36,21 +36,10 @@ var spinner = document.getElementById("loader");
 
 function LoadFromDB() {
   //step 1 is to fetch data from gsheets
-  // fetch(api)
-  //   .then((res) => res.json())
-  //   .then((res) => {
-  //     console.log(res);
-  //     data = res;
-  //     console.log("data = ", data);
+  
+  
 
-  //     // createskill(data.skills)
-  //     // createprojects(data.projects)
-  //     // turn off the spinner
-  //   });
-
-  fetch(
-    "https://script.google.com/macros/s/AKfycbxk0ol26QH89YTWOViFNx9FdXsfrTZRGp7SZogSFSnreVTBq5Rs6FNgv-QqqeWHMGxu/exec"
-  )
+  fetch(api)
     .then((res) => res.json())
     .then((res) => {
       data = res;
@@ -343,24 +332,3 @@ function testing(){
   experience_container.appendChild(row)
 
 }
-
-
-// <div class="card" id="experience-card">
-//                             <div class="row">
-//                                 <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-//                                     data-aos-duration="500">
-//                                     <div class="card-body cc-experience-header">
-//                                         <p>مارس 2016 - حتى الآن</p>
-//                                         <div class="h5">شركة ألف وباء</div>
-//                                     </div>
-//                                 </div>
-//                                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-//                                     <div class="card-body">
-//                                         <div class="h5">اخصائي موارد بشرية</div>
-//                                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
-//                                             مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
-//                                             إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                         </div>
