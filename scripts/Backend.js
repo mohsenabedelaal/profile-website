@@ -63,8 +63,9 @@ function LoadFromDB() {
         data["about-me-content"]["language"];
       document.getElementById("nabtha").innerText =
         data["about-me-content"]["about_me_details"];
-      createprojects(data.projects);
+      // createprojects(data.projects);
     //   createskill()
+    createcertificates(data.certificates)
       spinner.style.display = "none";
     });
 }
@@ -149,6 +150,39 @@ function createprojects(projects) {
     div.appendChild(img);
     div.appendChild(h5);
     div.appendChild(p);
+    box.appendChild(div);
+  });
+}
+function createcertificates(certificates) {
+  var box = document.getElementById("cbox");
+  certificates.forEach((certificate) => {
+    var div = document.createElement("div");
+    div.classList.add("card");
+    div.classList.add("col-md-3");
+    div.classList.add("mr-2");
+    div.classList.add("ml-2");
+    div.style.width = "15rem";
+
+    var img = document.createElement("img");
+    img.classList.add("card-img-top");
+    img.classList.add("mt-2");
+    img.src = certificate.image;
+    img.alt = certificate.title;
+
+    var h5 = document.createElement("h5");
+    h5.classList.add("card-title");
+    h5.classList.add("mt-1");
+    h5.innerText = certificate.title;
+
+    // var p = document.createElement("p");
+    // p.classList.add("card-text");
+    // p.classList.add("mt-1");
+    // p.classList.add("mb-2");
+    // p.innerText = proj.category;
+
+    div.appendChild(img);
+    div.appendChild(h5);
+    // div.appendChild(p);
     box.appendChild(div);
   });
 }
