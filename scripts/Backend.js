@@ -43,7 +43,6 @@ function LoadFromDB() {
     .then((res) => res.json())
     .then((res) => {
       data = res;
-      console.log(res);
       document.getElementById("website_name").innerText =
         data["header-content"]["website-name"];
       document.getElementById("logo").src =
