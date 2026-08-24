@@ -7,13 +7,6 @@ const year = document.getElementById('year');
 
 if (year) year.textContent = new Date().getFullYear();
 
-const cedarImage = document.querySelector('img[alt="Cedar Oxygen logo"]');
-if (cedarImage) {
-  cedarImage.src = 'https://cedaroxygen.com/wp-content/uploads/2020/08/lebanon.jpg';
-  cedarImage.alt = 'Cedar Oxygen economic recovery platform for Lebanon';
-  cedarImage.closest('.product-media')?.classList.remove('product-media-logo');
-}
-
 const syncHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 20);
