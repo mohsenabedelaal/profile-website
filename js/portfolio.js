@@ -7,6 +7,23 @@ const year = document.getElementById('year');
 
 if (year) year.textContent = new Date().getFullYear();
 
+const cedarLogo = document.querySelector('img[alt="Cedar Oxygen logo"]');
+if (cedarLogo) {
+  const cedarMedia = cedarLogo.closest('.product-media');
+  if (cedarMedia) {
+    cedarMedia.style.background = '#ffffff';
+    cedarMedia.style.padding = '24px';
+    cedarMedia.style.display = 'grid';
+    cedarMedia.style.placeItems = 'center';
+  }
+
+  cedarLogo.style.width = 'min(92%, 360px)';
+  cedarLogo.style.height = 'auto';
+  cedarLogo.style.maxHeight = '138px';
+  cedarLogo.style.objectFit = 'contain';
+  cedarLogo.style.filter = 'none';
+}
+
 const syncHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 20);
