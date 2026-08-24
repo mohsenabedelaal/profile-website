@@ -1,411 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mohsen Profile</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0d12" />
+  <meta name="description" content="Mohsen Abedelaal — Senior Software Engineer focused on AI systems, cloud architecture, backend platforms, and production-grade engineering." />
+  <meta property="og:title" content="Mohsen Abedelaal — Senior Software & AI Engineer" />
+  <meta property="og:description" content="Production software, cloud platforms, and AI systems designed for real-world use." />
+  <meta property="og:type" content="website" />
+  <title>Mohsen Abedelaal — Senior Software & AI Engineer</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body id="top" onload="LoadFromDB()">
-
-    <div id="loader" class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Mohsen Abedelaal home">
+        <span class="brand-mark">MA</span>
+        <span class="brand-name">Mohsen Abedelaal</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
+      </nav>
     </div>
-    <header>
-        <div class="profile-page sidebar-collapse">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary toggle-nav-bar-view"
-                color-on-scroll="400">
-                <div class="container">
-                    <div class="navbar-translate">
-                        <a id="website_name" class="navbar-brand" href="#" rel="tooltip">Mohsen Abedelaal</a>
-                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                            aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
-                                class="navbar-toggler-bar bar2"></span><span
-                                class="navbar-toggler-bar bar3"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#course">Courses</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Senior Software Engineer · AI Systems</p>
+          <h1>I build software that moves from <span>architecture</span> to production.</h1>
+          <p class="hero-lede">Senior software engineer focused on AI applications, cloud-native platforms, backend systems, and the engineering decisions that make them reliable at scale.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <a class="button button-ghost" href="mailto:mohsen.abedelaal@gmail.com">Start a conversation ↗</a>
+          </div>
+          <div class="hero-meta" aria-label="Professional focus">
+            <span>Beirut, Lebanon</span>
+            <span>Python / TypeScript</span>
+            <span>AWS / AI / Platform</span>
+          </div>
         </div>
 
-    </header>
-    <div class="page-content">
-        <div>
-            <div class="profile-page">
-                <div class="wrapper">
-                    <div class="page-header page-header-small" filter-color="green">
-                        <div class="page-header-image" data-parallax="true"
-                            style="background-image: url('images/tech-wallpaper.jpg')"></div>
-                        <div class="container">
-                            <div class="content-center">
-                                <div class="cc-profile-image">
-                                    <a href="#"><img id="logo" src="images/avatar.jpeg" alt="Image" /></a>
-                                </div>
-                                <div id="h1" class="h2 title">Mohsen Abedelaal</div>
-                                <p id="h2" class="category text-white">Software Engineer</p>
-                                <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Contact Me</a>
-                                <a id="cv" class="btn btn-primary" href="/Mohsen_Abedelaal_CV.pdf" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Download Resume</a>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="container">
-                                <div class="button-container">
-                                    <a id="gh" class="btn btn-default btn-round btn-lg btn-icon"
-                                        href="https://github.com/mohsenabedelaal" rel="tooltip"
-                                        title="Follow me on GitHub"><i class="fa fa-github"></i></a>
-                                    <a id="li" class="btn btn-default btn-round btn-lg btn-icon"
-                                        href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" rel="tooltip"
-                                        title="Follow me on LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="about">
-                <div class="container">
-                    <div class="card" data-aos="fade-up" data-aos-offset="10">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <div class="card-body">
-                                    <div class="h4 mt-0 title">Profile</div>
-                                    <p id="nabtha">A bug buster, who is attentive to detail but without losing the
-                                        bigger picture, I started exploring logical thinking and problem solving quite
-                                        young, with chess, video games, and puzzles.Driven by a love for continuous
-                                        learning, I am looking to build a professional career that expands my knowledge
-                                        and skills both in breadth and in depth. And I always seek to
-                                        deliver innovative solutions for real world problems.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="card-body">
-                                    <div class="h4 mt-0 title">General Information</div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong>
-                                        </div>
-                                        <div id="email" class="col-sm-8">mohsen.abedelaal@gmail.com</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                                        <div id="number" class="col-sm-8">+96171276886</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                                        <div id="location" class="col-sm-8">Lebanon, Beirut</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Language:</strong>
-                                        </div>
-                                        <div id="lang" class="col-sm-8">Arabic, English</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="skill" style="padding: 20px;">
+        <aside class="hero-panel reveal" aria-label="Engineering profile summary">
+          <div class="terminal-bar"><span></span><span></span><span></span><small>profile.json</small></div>
+          <div class="profile-visual">
+            <img src="images/avatar.jpeg" alt="Portrait of Mohsen Abedelaal" />
+            <div class="profile-glow"></div>
+          </div>
+          <div class="code-lines" aria-hidden="true">
+            <p><i>01</i><b>role</b><span>Senior Software Engineer</span></p>
+            <p><i>02</i><b>focus</b><span>AI + Cloud Platforms</span></p>
+            <p><i>03</i><b>approach</b><span>Systems thinking</span></p>
+            <p><i>04</i><b>delivery</b><span>Production first</span></p>
+          </div>
+        </aside>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll to explore</span><i></i></div>
+    </section>
 
+    <section class="marquee-band" aria-label="Core technologies">
+      <div class="marquee-track">
+        <span>AI Agents</span><i>•</i><span>FastAPI</span><i>•</i><span>AWS</span><i>•</i><span>Python</span><i>•</i><span>TypeScript</span><i>•</i><span>React / Next.js</span><i>•</i><span>Docker</span><i>•</i><span>Distributed Systems</span><i>•</i><span>AI Agents</span><i>•</i><span>FastAPI</span><i>•</i><span>AWS</span><i>•</i><span>Python</span>
+      </div>
+    </section>
 
+    <section class="section-shell section-block" id="work">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / Selected work</p>
+        <h2>Systems, not just features.</h2>
+        <p>I like working where product requirements meet architecture: turning ambiguous problems into systems that are observable, maintainable, and ready for production.</p>
+      </div>
 
-                <div class="section" id="skills">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 ml-auto mr-auto">
-                                <div class="h4 text-center mb-4 title text-uppercase">Technologies & Programming Langauges</div>
-                            </div>
-                        </div>
-                        <div class="gallery mt-3">
+      <div class="work-list">
+        <article class="work-card reveal">
+          <div class="work-number">01</div>
+          <div class="work-main">
+            <p class="work-label">AI Engineering · Platform Architecture</p>
+            <h3>Agent orchestration platform</h3>
+            <p>Architecture for coordinating LLM agents, model selection, internal tools, MCP integrations, skills, and execution workflows behind a consistent service interface.</p>
+            <div class="tag-row"><span>FastAPI</span><span>LLM Agents</span><span>MCP</span><span>AWS Fargate</span><span>Python</span></div>
+          </div>
+          <div class="work-aside">
+            <strong>Focus</strong>
+            <p>Execution boundaries, extensibility, runtime isolation, tool composition, and production deployment.</p>
+          </div>
+        </article>
 
-                            <div id="pbox" class="projects row justify-content-center">
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/python.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Python </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/javascript.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Javascript </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/aws.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Amazon Web Services </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/bash.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Bash</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/php.jpg" style="height: 70%;">
-                                    <h5 class="card-title mt-1">PHP</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/laravel.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Laravel</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/mysql.jpeg" style="height: 70%;">
-                                    <h5 class="card-title mt-1">MySql</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/mangodb.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">MangoDB</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/flask.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Flask</h5>
-                                </div>
-                            </div>
-                            
+        <article class="work-card reveal">
+          <div class="work-number">02</div>
+          <div class="work-main">
+            <p class="work-label">Cloud Architecture · Product Engineering</p>
+            <h3>Cloud-native application platforms</h3>
+            <p>Backend and frontend systems deployed on AWS using containerized services, API layers, databases, queues, identity, observability, and infrastructure as code.</p>
+            <div class="tag-row"><span>AWS CDK</span><span>ECS</span><span>API Gateway</span><span>React / Next.js</span><span>PostgreSQL</span></div>
+          </div>
+          <div class="work-aside">
+            <strong>Focus</strong>
+            <p>Reliability, delivery pipelines, authentication, service boundaries, cost-conscious architecture, and operational clarity.</p>
+          </div>
+        </article>
 
-                        </div>
-                    </div>
-                </div>
+        <article class="work-card reveal">
+          <div class="work-number">03</div>
+          <div class="work-main">
+            <p class="work-label">AI Evaluation · Data Systems</p>
+            <h3>Benchmarking and automation workflows</h3>
+            <p>Engineering workflows that compare outputs, benchmark system quality, preserve evidence, and transform complex operational data into clear, actionable results.</p>
+            <div class="tag-row"><span>Python</span><span>Evaluation</span><span>Automation</span><span>Data Pipelines</span><span>Observability</span></div>
+          </div>
+          <div class="work-aside">
+            <strong>Focus</strong>
+            <p>Repeatable evaluation, traceability, deterministic outputs, failure analysis, and useful reporting.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-
-                <div class="section">
-
-                    <div class="container cc-experience">
-                        <div class="h4 text-center mb-4 title text-uppercase">Experience</div>
-
-                        <div class="card" id="experience-card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>JANUARY 2021 - PRESENT</p>
-                                        <div class="h5">Cedar Oxygen</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">Full Stack Developer</div>
-                                        <ul>
-                                            <li> Working on frontend and backend development for P2P FX Fintech platform
-                                                using HTML5, CSS3, Material UI, React Js, MYSQL, Flask.</li>
-                                            <li>Creating a back office website for admin and staff for monitoring users
-                                                ,and a CMS section to edit side content using react admin .</li>
-                                            <li> Working on a Mobile fintech application using React Native.</li>
-                                            <li>Creating FX matching algorithm</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>MARCH 2019 - DECEMBER 2020</p>
-                                        <div class="h5">IPT POWERTECH</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Network Operating Center Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>JANUARY 2017 - DECEMBER 2018</p>
-                                        <div class="h5">AL DAR DEVELOPMENT</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Electrical Project Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>DECEMBER 2014 - OCTOBER 2016</p>
-                                        <div class="h5">ARABIAN CONSTRUCTION & DEVELOPMENT</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Electrical Site Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="education">
-                    <div class="container cc-education">
-                        <div class="h4 text-center mb-4 title text-uppercase">Education</div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>September 2010 - JUNE 2015</p>
-                                        <div class="h5">Lebanese International University</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex flex-column justify-content-center card-body">
-                                        <div class="h5">Master's of Electrical Engineering</div>
-                                        <p class="category">Faculty of Engineering</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="section" id="works">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 ml-auto mr-auto">
-                                <div class="h4 text-center mb-4 title text-uppercase">Certificates</div>
-                            </div>
-                        </div>
-                        <div class="gallery mt-3">
-
-                            <div id="cbox" class="projects row justify-content-center">
-                                <div class="card col-md-3 mr-2 ml-2 " style="width: 15rem;">
-                                    <img class="card-img-top mt-2"
-                                        src="./certificates-images/linkedin_thumb_AWS-CloudPractitioner-2020 - Mohsen Abdelaal.png">
-                                    <h5 class="card-title mt-1">AWS Cloud Practitioner</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section" id="course">
-                    <div class="container cc-education">
-                        <div class="h4 text-center mb-4 title text-uppercase">Courses</div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>January 2022 - February 2022</p>
-                                        <div class="h5">Udemy</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">AWS Cloud Practitioner</div>
-                                        <p class="category">15 Hours</p>
-                                        <ul>
-                                            <li>Define what the AWS Cloud is and the basic global infrastructure.</li>
-                                            <li>Describe basic AWS Cloud architectural principles.</li>
-                                            <li>Describe the AWS Cloud value proposition.</li>
-                                            <li>Describe key services on the AWS platform and their common use cases
-                                                (for example, compute and analytics).
-                                            </li>
-                                            <li>Describe basic security and compliance aspects of the AWS platform and
-                                                the Shared Responsibility Model.</li>
-                                            <li>Define the billing, account management, and pricing models.</li>
-                                            <li>Describe basic/core characteristics of deploying and operating in the
-                                                AWS Cloud.</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>APRIL 2019 - MAY 2019</p>
-                                        <div class="h5">Foundations of Computer Science</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">SE Factory</div>
-                                        <p class="category">40 Hours</p>
-                                        <p>A refresher course for fundamental computer science topics: algorithms
-                                            and\ndata structures,
-                                            complexity analysis, object-oriented programming,
-                                            and an introduction to relational databases</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <section class="expertise section-block" id="expertise">
+      <div class="section-shell">
+        <div class="section-heading inverse reveal">
+          <p class="section-index">02 / What I do</p>
+          <h2>Engineering depth across the stack.</h2>
         </div>
-        <footer class="footer">
-            <!-- <div class="h4 mb-4 text-center title">Contact Me</div>
-            <div class="container text-center"><a
-                    class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"
-                        aria-hidden="true"></i></a>
-            </div> -->
-            <div class="h4 title text-center">Mohsen Abedelaal</div>
-            <div class="text-center text-muted">
-                <p>&copy; 2022 All rights reserved.<br>Designed by - <a class="credit" href="#"
-                        target="_blank">Mohsen</a></p>
-            </div>
-        </footer>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal"><span>01</span><h3>AI Engineering</h3><p>Agentic applications, LLM orchestration, RAG, MCP/tool integrations, evaluation workflows, and AI-enabled product architecture.</p></article>
+          <article class="expertise-card reveal"><span>02</span><h3>Backend Systems</h3><p>Python and TypeScript services, FastAPI, APIs, asynchronous workflows, messaging, data access, and service design.</p></article>
+          <article class="expertise-card reveal"><span>03</span><h3>Cloud Architecture</h3><p>AWS infrastructure, ECS/Fargate, Lambda, API Gateway, S3, databases, IAM, CI/CD, CDK, observability, and scaling.</p></article>
+          <article class="expertise-card reveal"><span>04</span><h3>Technical Leadership</h3><p>Architecture decisions, requirement decomposition, mentoring, code review, trade-off analysis, and ownership from idea to production.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-shell section-block" id="stack">
+      <div class="stack-layout">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / Engineering stack</p>
+          <h2>Tools are choices, not identity.</h2>
+          <p>I choose technologies around the problem, operational model, team context, and long-term maintainability.</p>
+        </div>
+        <div class="stack-groups reveal">
+          <div><small>AI & Agents</small><p>LLM agents · RAG · MCP · tool use · evaluation · prompt/system design</p></div>
+          <div><small>Backend</small><p>Python · FastAPI · Flask · Node.js · TypeScript · REST APIs · RabbitMQ</p></div>
+          <div><small>Cloud</small><p>AWS · ECS/Fargate · Lambda · API Gateway · CDK · S3 · RDS · DynamoDB</p></div>
+          <div><small>Frontend</small><p>React · Next.js · JavaScript · TypeScript · responsive UI systems</p></div>
+          <div><small>Data & Ops</small><p>PostgreSQL · MySQL · MongoDB · Redis · Docker · CloudWatch · CI/CD</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-shell section-block" id="experience">
+      <div class="section-heading reveal">
+        <p class="section-index">04 / Experience</p>
+        <h2>A career built around solving increasingly complex systems problems.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2021 — Present</div>
+          <div class="timeline-body"><p class="timeline-kicker">Software Engineering</p><h3>Full-stack and cloud product development</h3><p>Building and evolving production applications across backend APIs, frontend systems, cloud infrastructure, automation, and AI-enabled workflows.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2019 — 2020</div>
+          <div class="timeline-body"><p class="timeline-kicker">IPT PowerTech</p><h3>Network Operations Center Engineer</h3><p>Operational engineering experience that strengthened my approach to reliability, monitoring, incident response, and production ownership.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2014 — 2018</div>
+          <div class="timeline-body"><p class="timeline-kicker">Engineering foundation</p><h3>Electrical project & site engineering</h3><p>Hands-on engineering roles that built a strong foundation in systems thinking, execution, coordination, and accountability.</p></div>
+        </article>
+      </div>
+    </section>
 
-        <!-- jQuery and JS bundle w/ Popper.js -->
-        <script src="./scripts/Backend.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"
-            integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK"
-            crossorigin="anonymous"></script>
-        <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/main.js?ver=1.1.0"></script>+
-        <script>
-            jQuery(window).on('load', function () {
-                jQuery('.loader').fadeOut(200);
-            });
-        </script>
+    <section class="about section-block" id="about">
+      <div class="section-shell about-grid">
+        <div class="about-copy reveal">
+          <p class="section-index">05 / About</p>
+          <h2>I care about the decision behind the code.</h2>
+          <p>I enjoy difficult engineering problems where the answer is not simply “use framework X.” My work sits at the intersection of product thinking, system design, implementation, cloud operations, and now increasingly AI engineering.</p>
+          <p>I value clear interfaces, pragmatic architecture, readable code, useful observability, and teams that understand why a system works — not only that it works.</p>
+        </div>
+        <div class="about-facts reveal">
+          <div><strong>Based in</strong><span>Beirut, Lebanon</span></div>
+          <div><strong>Languages</strong><span>Arabic · English</span></div>
+          <div><strong>Education</strong><span>Master's in Electrical Engineering</span></div>
+          <div><strong>Credentials</strong><span>AWS Cloud Practitioner · AWS Developer Associate</span></div>
+          <div><strong>Current direction</strong><span>AI Engineering · Architecture · Leadership</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell contact-block" id="contact">
+      <div class="contact-card reveal">
+        <p class="section-index">06 / Contact</p>
+        <h2>Have an interesting engineering problem?</h2>
+        <p>I'm always interested in ambitious software, cloud, and AI engineering work.</p>
+        <a class="contact-link" href="mailto:mohsen.abedelaal@gmail.com">mohsen.abedelaal@gmail.com <span>↗</span></a>
+        <div class="contact-socials">
+          <a href="https://github.com/mohsenabedelaal" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <p>© <span id="year"></span> Mohsen Abedelaal</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/portfolio.js"></script>
 </body>
-
 </html>
