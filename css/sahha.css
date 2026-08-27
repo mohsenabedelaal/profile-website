@@ -1,0 +1,171 @@
+/* Sahha — award-winning health & nutrition AI project preview */
+.sahha-media {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #eef4ec;
+}
+
+.sahha-app {
+  width: min(92%, 480px);
+  border: 1px solid #b9c5b7;
+  background: #fbfcf8;
+  box-shadow: 0 18px 50px rgba(25, 55, 39, 0.08);
+}
+
+.sahha-app-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #d9e0d6;
+}
+
+.sahha-app-head strong {
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.sahha-award {
+  font: 500 10.5px/1.3 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 5px 7px;
+  color: #183f2d;
+  background: #dcebdc;
+  border: 1px solid #b8d0bb;
+}
+
+.sahha-dashboard {
+  padding: 16px;
+}
+
+.sahha-score-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.sahha-score {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(#2f7959 0 86%, #dce5db 86% 100%);
+  position: relative;
+}
+
+.sahha-score::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: #fbfcf8;
+}
+
+.sahha-score span {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.sahha-score-copy small {
+  display: block;
+  font: 11px var(--mono);
+  text-transform: uppercase;
+  color: #677268;
+  margin-bottom: 5px;
+}
+
+.sahha-score-copy strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.sahha-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.sahha-stat {
+  padding: 10px;
+  border: 1px solid #d9e0d6;
+  background: #fff;
+}
+
+.sahha-stat small {
+  display: block;
+  font: 10.5px var(--mono);
+  text-transform: uppercase;
+  color: #717b72;
+  margin-bottom: 3px;
+}
+
+.sahha-stat strong {
+  font-size: 14px;
+}
+
+.sahha-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.sahha-action {
+  padding: 9px 10px;
+  border: 1px solid #d9e0d6;
+  background: #f4f7f2;
+  font: 11px var(--mono);
+  color: #364139;
+}
+
+.award-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  font: 500 11.5px/1.4 var(--mono);
+  text-transform: uppercase;
+  color: #1d5b43;
+}
+
+.award-note::before {
+  content: '★';
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .sahha-media {
+    padding: 14px;
+  }
+
+  .sahha-app {
+    width: 100%;
+  }
+
+  .sahha-score-row {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .sahha-score {
+    width: 68px;
+    height: 68px;
+  }
+
+  .sahha-score span {
+    font-size: 20px;
+  }
+
+  .sahha-stats {
+    grid-template-columns: 1fr;
+  }
+}
