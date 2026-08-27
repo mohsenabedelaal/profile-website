@@ -7,6 +7,12 @@ const year = document.getElementById('year');
 
 if (year) year.textContent = new Date().getFullYear();
 
+const konovoImage = document.querySelector('img[alt="Konovo healthcare research platform"]');
+if (konovoImage) {
+  konovoImage.src = 'https://konovo.com/wp-content/uploads/2025/04/Konovo_Platform-1024x632.png';
+  konovoImage.alt = 'Konovo intelligent healthcare research platform mockup';
+}
+
 const syncHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 16);
