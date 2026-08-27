@@ -1,3 +1,8 @@
+/* Profile image should keep its original colors */
+.portrait-wrap img {
+  filter: none !important;
+}
+
 /* Tablet/mobile centering refinements */
 @media (max-width: 980px) {
   .hero-profile {
