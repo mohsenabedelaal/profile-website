@@ -1,411 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mohsen Profile</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f2ec" />
+  <meta name="description" content="Mohsen Abedelaal — Senior Software & AI Engineer working across AI systems, backend platforms, cloud architecture and product engineering." />
+  <meta property="og:title" content="Mohsen Abedelaal — Senior Software & AI Engineer" />
+  <meta property="og:description" content="AI systems, backend platforms, cloud architecture and production software." />
+  <meta property="og:type" content="website" />
+  <title>Mohsen Abedelaal — Senior Software & AI Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon-ai.svg" />
+  <link rel="alternate icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/sahha.css" />
+  <link rel="stylesheet" href="css/responsive-centering.css" />
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body id="top" onload="LoadFromDB()">
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Mohsen Abedelaal home">
+        <strong>Mohsen Abedelaal</strong>
+        <span>Senior Software & AI Engineer</span>
+      </a>
 
-    <div id="loader" class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+      </nav>
     </div>
-    <header>
-        <div class="profile-page sidebar-collapse">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary toggle-nav-bar-view"
-                color-on-scroll="400">
-                <div class="container">
-                    <div class="navbar-translate">
-                        <a id="website_name" class="navbar-brand" href="#" rel="tooltip">Mohsen Abedelaal</a>
-                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                            aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
-                                class="navbar-toggler-bar bar2"></span><span
-                                class="navbar-toggler-bar bar3"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#course">Courses</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="kicker">Senior Software & AI Engineer</p>
+        <h1 id="hero-title">I turn complex engineering problems into <em>clear, production-ready systems.</em></h1>
+        <p class="hero-lede">AI systems, backend platforms, cloud architecture and full-stack products — from technical decisions to implementation and delivery.</p>
+        <div class="hero-actions">
+          <a class="action action-primary" href="#work">See selected work <span>↓</span></a>
+          <a class="action action-text" href="mailto:mohsen.abedelaal@gmail.com">Start a conversation ↗</a>
         </div>
+      </div>
 
-    </header>
-    <div class="page-content">
-        <div>
-            <div class="profile-page">
-                <div class="wrapper">
-                    <div class="page-header page-header-small" filter-color="green">
-                        <div class="page-header-image" data-parallax="true"
-                            style="background-image: url('images/tech-wallpaper.jpg')"></div>
-                        <div class="container">
-                            <div class="content-center">
-                                <div class="cc-profile-image">
-                                    <a href="#"><img id="logo" src="images/avatar.jpeg" alt="Image" /></a>
-                                </div>
-                                <div id="h1" class="h2 title">Mohsen Abedelaal</div>
-                                <p id="h2" class="category text-white">Software Engineer</p>
-                                <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Contact Me</a>
-                                <a id="cv" class="btn btn-primary" href="/Mohsen_Abedelaal_CV.pdf" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Download Resume</a>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="container">
-                                <div class="button-container">
-                                    <a id="gh" class="btn btn-default btn-round btn-lg btn-icon"
-                                        href="https://github.com/mohsenabedelaal" rel="tooltip"
-                                        title="Follow me on GitHub"><i class="fa fa-github"></i></a>
-                                    <a id="li" class="btn btn-default btn-round btn-lg btn-icon"
-                                        href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" rel="tooltip"
-                                        title="Follow me on LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="about">
-                <div class="container">
-                    <div class="card" data-aos="fade-up" data-aos-offset="10">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <div class="card-body">
-                                    <div class="h4 mt-0 title">Profile</div>
-                                    <p id="nabtha">A bug buster, who is attentive to detail but without losing the
-                                        bigger picture, I started exploring logical thinking and problem solving quite
-                                        young, with chess, video games, and puzzles.Driven by a love for continuous
-                                        learning, I am looking to build a professional career that expands my knowledge
-                                        and skills both in breadth and in depth. And I always seek to
-                                        deliver innovative solutions for real world problems.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="card-body">
-                                    <div class="h4 mt-0 title">General Information</div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong>
-                                        </div>
-                                        <div id="email" class="col-sm-8">mohsen.abedelaal@gmail.com</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                                        <div id="number" class="col-sm-8">+96171276886</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                                        <div id="location" class="col-sm-8">Lebanon, Beirut</div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Language:</strong>
-                                        </div>
-                                        <div id="lang" class="col-sm-8">Arabic, English</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="skill" style="padding: 20px;">
-
-
-
-                <div class="section" id="skills">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 ml-auto mr-auto">
-                                <div class="h4 text-center mb-4 title text-uppercase">Technologies & Programming Langauges</div>
-                            </div>
-                        </div>
-                        <div class="gallery mt-3">
-
-                            <div id="pbox" class="projects row justify-content-center">
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/python.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Python </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/javascript.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Javascript </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/aws.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Amazon Web Services </h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/bash.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Bash</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/php.jpg" style="height: 70%;">
-                                    <h5 class="card-title mt-1">PHP</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/laravel.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Laravel</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/mysql.jpeg" style="height: 70%;">
-                                    <h5 class="card-title mt-1">MySql</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/mangodb.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">MangoDB</h5>
-                                </div>
-                                <div class="card col-md-3 mr-2 ml-2" style="width: 15rem;">
-                                    <img class="card-img-top mt-2" src="./technologies/flask.png" style="height: 70%;">
-                                    <h5 class="card-title mt-1">Flask</h5>
-                                </div>
-                            </div>
-                            
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="section">
-
-                    <div class="container cc-experience">
-                        <div class="h4 text-center mb-4 title text-uppercase">Experience</div>
-
-                        <div class="card" id="experience-card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>JANUARY 2021 - PRESENT</p>
-                                        <div class="h5">Cedar Oxygen</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">Full Stack Developer</div>
-                                        <ul>
-                                            <li> Working on frontend and backend development for P2P FX Fintech platform
-                                                using HTML5, CSS3, Material UI, React Js, MYSQL, Flask.</li>
-                                            <li>Creating a back office website for admin and staff for monitoring users
-                                                ,and a CMS section to edit side content using react admin .</li>
-                                            <li> Working on a Mobile fintech application using React Native.</li>
-                                            <li>Creating FX matching algorithm</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>MARCH 2019 - DECEMBER 2020</p>
-                                        <div class="h5">IPT POWERTECH</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Network Operating Center Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>JANUARY 2017 - DECEMBER 2018</p>
-                                        <div class="h5">AL DAR DEVELOPMENT</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Electrical Project Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-experience-header">
-                                        <p>DECEMBER 2014 - OCTOBER 2016</p>
-                                        <div class="h5">ARABIAN CONSTRUCTION & DEVELOPMENT</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex align-items-center card-body">
-                                        <div class="h5">Electrical Site Engineer</div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="education">
-                    <div class="container cc-education">
-                        <div class="h4 text-center mb-4 title text-uppercase">Education</div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>September 2010 - JUNE 2015</p>
-                                        <div class="h5">Lebanese International University</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="d-flex flex-column justify-content-center card-body">
-                                        <div class="h5">Master's of Electrical Engineering</div>
-                                        <p class="category">Faculty of Engineering</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="section" id="works">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 ml-auto mr-auto">
-                                <div class="h4 text-center mb-4 title text-uppercase">Certificates</div>
-                            </div>
-                        </div>
-                        <div class="gallery mt-3">
-
-                            <div id="cbox" class="projects row justify-content-center">
-                                <div class="card col-md-3 mr-2 ml-2 " style="width: 15rem;">
-                                    <img class="card-img-top mt-2"
-                                        src="./certificates-images/linkedin_thumb_AWS-CloudPractitioner-2020 - Mohsen Abdelaal.png">
-                                    <h5 class="card-title mt-1">AWS Cloud Practitioner</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section" id="course">
-                    <div class="container cc-education">
-                        <div class="h4 text-center mb-4 title text-uppercase">Courses</div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>January 2022 - February 2022</p>
-                                        <div class="h5">Udemy</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">AWS Cloud Practitioner</div>
-                                        <p class="category">15 Hours</p>
-                                        <ul>
-                                            <li>Define what the AWS Cloud is and the basic global infrastructure.</li>
-                                            <li>Describe basic AWS Cloud architectural principles.</li>
-                                            <li>Describe the AWS Cloud value proposition.</li>
-                                            <li>Describe key services on the AWS platform and their common use cases
-                                                (for example, compute and analytics).
-                                            </li>
-                                            <li>Describe basic security and compliance aspects of the AWS platform and
-                                                the Shared Responsibility Model.</li>
-                                            <li>Define the billing, account management, and pricing models.</li>
-                                            <li>Describe basic/core characteristics of deploying and operating in the
-                                                AWS Cloud.</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                                    data-aos-duration="500">
-                                    <div class="card-body cc-education-header">
-                                        <p>APRIL 2019 - MAY 2019</p>
-                                        <div class="h5">Foundations of Computer Science</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                                    <div class="card-body">
-                                        <div class="h5">SE Factory</div>
-                                        <p class="category">40 Hours</p>
-                                        <p>A refresher course for fundamental computer science topics: algorithms
-                                            and\ndata structures,
-                                            complexity analysis, object-oriented programming,
-                                            and an introduction to relational databases</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <aside class="hero-profile reveal" aria-label="Professional profile summary">
+        <div class="portrait-wrap">
+          <img src="images/avatar.jpeg" alt="Mohsen Abedelaal" />
         </div>
-        <footer class="footer">
-            <!-- <div class="h4 mb-4 text-center title">Contact Me</div>
-            <div class="container text-center"><a
-                    class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"
-                        aria-hidden="true"></i></a>
-            </div> -->
-            <div class="h4 title text-center">Mohsen Abedelaal</div>
-            <div class="text-center text-muted">
-                <p>&copy; 2022 All rights reserved.<br>Designed by - <a class="credit" href="#"
-                        target="_blank">Mohsen</a></p>
+        <dl class="profile-facts">
+          <div><dt>Focus</dt><dd>AI · Cloud · Backend · Product</dd></div>
+          <div><dt>Based in</dt><dd>Beirut, Lebanon</dd></div>
+          <div><dt>Work</dt><dd>Senior roles · Consulting · Product collaboration</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <div class="shell capability-strip" aria-label="Core engineering areas">
+      <span>AI systems</span><span>Backend & APIs</span><span>Cloud architecture</span><span>Product engineering</span><span>Technical leadership</span>
+    </div>
+
+    <section class="shell section" id="work">
+      <header class="section-head reveal">
+        <div><p class="section-no">01 / Selected work</p><h2>Real products. Different industries. One engineering mindset.</h2></div>
+        <p>Products I’ve contributed to across health & nutrition AI, healthcare research, proxy infrastructure, fintech, academic research and operational AI.</p>
+      </header>
+
+      <div class="work-list">
+        <a class="work-item reveal" href="https://sahha-ai.netlify.app/" target="_blank" rel="noreferrer">
+          <figure class="work-media sahha-media" aria-label="Sahha AI health and nutrition application preview">
+            <div class="sahha-app" aria-hidden="true">
+              <div class="sahha-app-head"><strong>Sahha</strong><span class="sahha-award">AI Hackathon Award</span></div>
+              <div class="sahha-dashboard">
+                <div class="sahha-score-row">
+                  <div class="sahha-score"><span>86</span></div>
+                  <div class="sahha-score-copy"><small>Today’s health score</small><strong>Strong day — keep the momentum going.</strong></div>
+                </div>
+                <div class="sahha-stats">
+                  <div class="sahha-stat"><small>Calories</small><strong>1,840 kcal</strong></div>
+                  <div class="sahha-stat"><small>Protein</small><strong>132 g</strong></div>
+                  <div class="sahha-stat"><small>Hydration</small><strong>2.3 / 3 L</strong></div>
+                </div>
+                <div class="sahha-actions">
+                  <div class="sahha-action">Scan barcode → food score</div>
+                  <div class="sahha-action">Ask AI nutrition assistant</div>
+                  <div class="sahha-action">Weekly meal plan</div>
+                  <div class="sahha-action">Generate shopping list</div>
+                </div>
+              </div>
             </div>
-        </footer>
+          </figure>
+          <div class="work-copy">
+            <div class="work-meta"><span>01</span><span>Health · Nutrition · AI</span></div>
+            <h3>Sahha</h3>
+            <p>Gamified health and nutrition tracker with AI assistance, barcode food scanning and scoring, calorie and macro tracking, hydration goals, nutrition education, personalized weekly meal planning and automatically generated grocery lists.</p>
+            <span class="award-note">Recognized in an AI hackathon</span>
+            <span class="work-link">Open project ↗</span>
+          </div>
+        </a>
 
+        <a class="work-item reveal" href="https://konovo.com" target="_blank" rel="noreferrer">
+          <figure class="work-media"><img src="https://konovo.com/wp-content/uploads/2025/09/Home-2.webp" alt="Konovo healthcare research platform" loading="lazy" /></figure>
+          <div class="work-copy"><div class="work-meta"><span>02</span><span>Healthcare research</span></div><h3>Konovo</h3><p>Technology-enabled healthcare research platform connecting life-science teams with healthcare audiences and faster research workflows.</p><span class="work-link">Visit product ↗</span></div>
+        </a>
 
+        <a class="work-item reveal" href="https://anyip.io" target="_blank" rel="noreferrer">
+          <figure class="work-media work-media-logo"><img src="https://anyip.io/media/f/289204776307124/422x260/ae919ef3a6/logo.svg" alt="anyIP logo" loading="lazy" /></figure>
+          <div class="work-copy"><div class="work-meta"><span>03</span><span>Proxy infrastructure</span></div><h3>anyIP</h3><p>Mobile and residential proxy platform built for scraping, automation, testing and reliable geo-targeted internet workflows.</p><span class="work-link">Visit product ↗</span></div>
+        </a>
 
-        <!-- jQuery and JS bundle w/ Popper.js -->
-        <script src="./scripts/Backend.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"
-            integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK"
-            crossorigin="anonymous"></script>
-        <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/main.js?ver=1.1.0"></script>+
-        <script>
-            jQuery(window).on('load', function () {
-                jQuery('.loader').fadeOut(200);
-            });
-        </script>
+        <a class="work-item reveal" href="https://cedaroxygen.com" target="_blank" rel="noreferrer">
+          <figure class="work-media cedar-media" aria-label="Cedar Oxygen"><span class="cedar-symbol" aria-hidden="true"></span><span class="cedar-wordmark">CEDAR OXYGEN</span></figure>
+          <div class="work-copy"><div class="work-meta"><span>04</span><span>FinTech / trade finance</span></div><h3>Cedar Oxygen</h3><p>Economic recovery and trade-finance platform supporting Lebanese manufacturers with working-capital and supply-chain financing.</p><span class="work-link">Visit product ↗</span></div>
+        </a>
+
+        <a class="work-item reveal" href="https://zendy.io" target="_blank" rel="noreferrer">
+          <figure class="work-media"><img src="https://zendy.io/_next/image?q=75&amp;url=%2Fimages%2FmultipleDevice.webp&amp;w=1080" alt="Zendy academic research platform across devices" loading="lazy" /></figure>
+          <div class="work-copy"><div class="work-meta"><span>05</span><span>Research / AI</span></div><h3>Zendy</h3><p>AI-powered research library helping students and researchers discover, access and work with academic content across disciplines.</p><span class="work-link">Visit product ↗</span></div>
+        </a>
+
+        <a class="work-item reveal" href="https://picacity.ai" target="_blank" rel="noreferrer">
+          <figure class="work-media"><img src="https://store-images.s-microsoft.com/image/apps.1961.cf0056c8-7827-4a3a-8614-2990037a3006.864b5bbe-c9c6-43b1-9c44-be0de2cc281d.274ec1a2-009f-4d7d-8650-35908be858a5" alt="Picacity AI districtnex smart-city platform dashboard" loading="lazy" /></figure>
+          <div class="work-copy"><div class="work-meta"><span>06</span><span>Operational AI / smart cities</span></div><h3>Picacity AI</h3><p>Operational AI platform behind districtnex™, unifying assets, data and decision workflows across buildings, campuses, districts and cities.</p><span class="work-link">Visit product ↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="shell section" id="capabilities"><header class="section-head compact reveal"><div><p class="section-no">02 / Capabilities</p><h2>What I work on.</h2></div><p>Broad enough to see the whole system. Deep enough to own the engineering decisions inside it.</p></header><div class="capability-list"><article class="capability-row reveal"><span class="capability-index">A</span><h3>AI systems</h3><p>Agent workflows, RAG, MCP and tool integrations, evaluation, orchestration and production LLM services.</p></article><article class="capability-row reveal"><span class="capability-index">B</span><h3>Backend & platform</h3><p>Python, FastAPI, Node.js, TypeScript, APIs, integrations, asynchronous workflows and service boundaries.</p></article><article class="capability-row reveal"><span class="capability-index">C</span><h3>Cloud architecture</h3><p>AWS, containers, serverless, infrastructure as code, CI/CD, observability, reliability and scaling.</p></article><article class="capability-row reveal"><span class="capability-index">D</span><h3>Product engineering</h3><p>React and Next.js products connected to real backend systems, data, authentication and cloud infrastructure.</p></article><article class="capability-row reveal"><span class="capability-index">E</span><h3>Architecture & leadership</h3><p>System design, trade-off analysis, technical reviews, mentoring and ownership from problem to production.</p></article></div></section>
+
+    <section class="shell section" id="experience"><header class="section-head compact reveal"><div><p class="section-no">03 / Experience</p><h2>Built from operations upward.</h2></div><p>That background is why I care about reliability, observability and what happens after software reaches production.</p></header><div class="experience-list"><article class="experience-row reveal"><time>2021 — now</time><div><h3>Software engineering</h3><p>Production applications across backend APIs, frontend systems, cloud infrastructure, automation and AI-enabled workflows.</p></div><span>Software · Cloud · AI</span></article><article class="experience-row reveal"><time>2019 — 2020</time><div><h3>Network operations engineering</h3><p>Operational engineering that shaped how I think about monitoring, reliability, incident response and production ownership.</p></div><span>Operations · Reliability</span></article><article class="experience-row reveal"><time>2014 — 2018</time><div><h3>Electrical project engineering</h3><p>Hands-on engineering experience that built a foundation in systems thinking, coordination, execution and accountability.</p></div><span>Systems · Delivery</span></article></div></section>
+
+    <section class="shell section about-section" id="about"><header class="section-head compact reveal"><div><p class="section-no">04 / About</p><h2>Engineer. Architect. Builder.</h2></div></header><div class="about-grid"><div class="about-copy reveal"><p>I enjoy engineering problems where the answer is not simply “use framework X.” I care about service boundaries, failure modes, maintainability, observability, developer experience and choosing the simplest architecture that can do the job well.</p><p>My direction is deeper into AI engineering and system architecture while continuing to work across backend, cloud and product delivery.</p></div><dl class="about-facts reveal"><div><dt>Education</dt><dd>Master's in Electrical Engineering</dd></div><div><dt>Credentials</dt><dd>AWS Cloud Practitioner · AWS Developer Associate</dd></div><div><dt>Languages</dt><dd>Arabic · English</dd></div><div><dt>Core stack</dt><dd>Python · TypeScript · AWS · React / Next.js · PostgreSQL · Docker</dd></div></dl></div></section>
+
+    <section class="shell contact-section reveal" id="contact"><p class="section-no">05 / Contact</p><div class="contact-main"><h2>Have an engineering problem or opportunity worth discussing?</h2><a class="contact-email" href="mailto:mohsen.abedelaal@gmail.com">mohsen.abedelaal@gmail.com ↗</a></div><div class="contact-meta"><span>Senior roles · Consulting · Product collaboration</span><nav aria-label="Contact links"><a href="https://github.com/mohsenabedelaal" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a></nav></div></section>
+  </main>
+
+  <footer class="shell footer"><span>© <span id="year"></span> Mohsen Abedelaal</span><span>Less, but useful.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="js/portfolio.js"></script>
 </body>
-
 </html>
