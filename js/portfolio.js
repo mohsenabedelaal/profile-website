@@ -110,6 +110,73 @@ if (experienceSection && !document.getElementById('writing-speaking')) {
   }
 }
 
+// Get in touch / Calendly booking experience
+if (contactSection && !document.getElementById('booking-dialog')) {
+  const contactMain = contactSection.querySelector('.contact-main');
+  if (contactMain) {
+    contactMain.innerHTML = `
+      <h2>Have an engineering problem or opportunity worth discussing?</h2>
+      <div class="contact-options">
+        <p>Book a focused 30-minute call to discuss the problem, scope, architecture, collaboration, or next steps. Prefer email? That works too.</p>
+        <div class="contact-actions-row">
+          <button class="booking-trigger" type="button" data-open-booking>
+            Book a 30-min call <span>↗</span>
+          </button>
+          <a class="contact-email-button" href="mailto:mohsen.abedelaal@gmail.com">Email me ↗</a>
+        </div>
+        <p class="contact-expectation">30 minutes · Calendly scheduling · Google Meet invite</p>
+      </div>
+    `;
+  }
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'booking-dialog';
+  dialog.id = 'booking-dialog';
+  dialog.setAttribute('aria-labelledby', 'booking-dialog-title');
+  dialog.innerHTML = `
+    <div class="booking-dialog-shell">
+      <div class="booking-dialog-head">
+        <div class="booking-dialog-title">
+          <strong id="booking-dialog-title">Schedule a 30-minute conversation</strong>
+          <span>Choose a time that works for you. The meeting invite will be sent automatically.</span>
+        </div>
+        <button class="booking-dialog-close" type="button" aria-label="Close scheduling window" data-close-booking>×</button>
+      </div>
+      <iframe
+        class="booking-frame"
+        title="Schedule a meeting with Mohsen Abedelaal"
+        loading="lazy"
+        data-src="https://calendly.com/mohsen-abedelaal/30min?hide_gdpr_banner=1"
+        allow="camera; microphone; fullscreen; payment"
+      ></iframe>
+    </div>
+  `;
+  document.body.appendChild(dialog);
+
+  const frame = dialog.querySelector('.booking-frame');
+  const openBooking = () => {
+    if (frame && !frame.getAttribute('src')) frame.setAttribute('src', frame.dataset.src || '');
+    if (typeof dialog.showModal === 'function') {
+      dialog.showModal();
+      document.body.classList.add('booking-open');
+    } else {
+      window.open('https://calendly.com/mohsen-abedelaal/30min', '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  const closeBooking = () => {
+    if (dialog.open) dialog.close();
+    document.body.classList.remove('booking-open');
+  };
+
+  document.querySelectorAll('[data-open-booking]').forEach((button) => button.addEventListener('click', openBooking));
+  dialog.querySelector('[data-close-booking]')?.addEventListener('click', closeBooking);
+  dialog.addEventListener('close', () => document.body.classList.remove('booking-open'));
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) closeBooking();
+  });
+}
+
 const syncHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 16);
