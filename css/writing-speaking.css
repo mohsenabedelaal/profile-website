@@ -1,0 +1,120 @@
+/* Writing & Speaking — simple editorial list */
+.thoughts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px;
+}
+
+.thoughts-column-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.thoughts-column-head h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.thoughts-column-head span {
+  font: 11.5px/1.5 var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.thought-list {
+  display: grid;
+}
+
+.thought-item {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  transition: color .2s ease;
+}
+
+.thought-item:hover h4,
+.thought-item:focus-visible h4 {
+  color: var(--accent);
+}
+
+.thought-meta {
+  font: 11.5px/1.55 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #72756f;
+}
+
+.thought-meta strong {
+  display: block;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.thought-copy h4 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color .2s ease;
+}
+
+.thought-copy p {
+  margin: 0;
+  color: #646864;
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+.thought-link {
+  display: inline-block;
+  margin-top: 12px;
+  font: 11.5px/1.5 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.thought-item:hover .thought-link,
+.thought-item:focus-visible .thought-link {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .thoughts-grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+}
+
+@media (max-width: 560px) {
+  .thought-item {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .thought-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .thought-meta strong {
+    display: inline;
+    margin: 0;
+  }
+
+  .thought-copy h4 {
+    font-size: 1.1rem;
+  }
+}
