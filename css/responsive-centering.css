@@ -3,6 +3,170 @@
   filter: none !important;
 }
 
+/* Get in touch / booking experience */
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 470px;
+}
+
+.contact-options > p {
+  margin: 0;
+  color: #626661;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.contact-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.booking-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 52px;
+  padding: 0 9px 0 18px;
+  border: 1px solid #111214;
+  background: #111214;
+  color: #faf9f6;
+  font: 500 12px/1 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.booking-trigger span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f4f2ec;
+  color: #111214;
+  font-size: 15px;
+  transition: transform .2s ease;
+}
+
+.booking-trigger:hover,
+.booking-trigger:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.booking-trigger:hover span,
+.booking-trigger:focus-visible span {
+  transform: translate(2px, -1px);
+}
+
+.contact-email-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 17px;
+  border-bottom: 1px solid #111214;
+  font: 500 12px/1.2 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+
+.contact-email-button:hover,
+.contact-email-button:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-expectation {
+  margin: 0;
+  font: 11.5px/1.55 var(--mono);
+  color: #777a75;
+}
+
+.booking-dialog {
+  width: min(920px, calc(100% - 36px));
+  height: min(86svh, 790px);
+  padding: 0;
+  border: 1px solid var(--line-dark);
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 30px 100px rgba(17, 18, 20, .22);
+}
+
+.booking-dialog::backdrop {
+  background: rgba(17, 18, 20, .56);
+  backdrop-filter: blur(5px);
+}
+
+.booking-dialog-shell {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.booking-dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 70px;
+  padding: 14px 18px 14px 22px;
+  border-bottom: 1px solid var(--line);
+  background: #f4f2ec;
+}
+
+.booking-dialog-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.booking-dialog-title strong {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+
+.booking-dialog-title span {
+  font: 11.5px/1.45 var(--mono);
+  color: #6b6f69;
+}
+
+.booking-dialog-close {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line-dark);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.booking-dialog-close:hover,
+.booking-dialog-close:focus-visible {
+  background: #111214;
+  color: #faf9f6;
+}
+
+.booking-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+body.booking-open {
+  overflow: hidden;
+}
+
 /* Tablet/mobile centering refinements */
 @media (max-width: 980px) {
   .hero-profile {
@@ -64,5 +228,35 @@
 
   .sahha-app {
     margin-inline: auto;
+  }
+
+  .contact-actions-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .booking-trigger,
+  .contact-email-button {
+    width: 100%;
+  }
+
+  .contact-email-button {
+    justify-content: center;
+    border: 1px solid var(--line-dark);
+  }
+
+  .booking-dialog {
+    width: calc(100% - 16px);
+    height: 92svh;
+  }
+
+  .booking-dialog-head {
+    min-height: 64px;
+    padding: 10px 10px 10px 15px;
+  }
+
+  .booking-dialog-title span {
+    font-size: 10.5px;
   }
 }
