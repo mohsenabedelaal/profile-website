@@ -66,57 +66,23 @@
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: #ffffff;
+  background: #fff;
 }
 
-.deadlift-stage img,
-.deadlift-stage canvas {
-  grid-area: 1 / 1;
+.deadlift-stage img {
   display: block;
   width: 111px;
   height: 100px;
   max-width: 100%;
   object-fit: contain;
+  filter: none !important;
 }
 
-.deadlift-player [hidden] {
-  display: none !important;
-}
-
-.deadlift-fallback {
-  grid-area: 1 / 1;
-  padding: 0.5rem;
-  color: #515950;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.deadlift-toggle {
-  display: block;
-  width: 100%;
-  min-height: 44px;
+.deadlift-caption {
   margin-top: 0.5rem;
-  padding: 0.5rem;
-  border: 1px solid var(--line-dark);
-  border-radius: 5px;
-  background: transparent;
-  color: var(--text);
-  font: 500 0.875rem/1.5 var(--sans);
-  cursor: pointer;
-}
-
-.deadlift-toggle:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: #edf2ec;
-}
-
-.deadlift-toggle:focus-visible,
-.beyond-credit summary:focus-visible,
-.beyond-credit a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
+  color: #626861;
+  font: 500 0.75rem/1.5 var(--mono);
+  text-align: center;
 }
 
 .pr-meanings {
@@ -131,8 +97,8 @@
 }
 
 .pr-meanings dt {
-  color: #515950;
-  font: 400 0.875rem/1.5 var(--mono);
+  color: #626861;
+  font: 400 0.8rem/1.5 var(--mono);
 }
 
 .pr-meanings dd {
@@ -154,22 +120,11 @@
 }
 
 .beyond-credit {
-  margin-top: 0.75rem;
-  color: #515950;
-  font-size: 0.875rem;
-  line-height: 1.6;
+  margin-top: 0.6rem;
+  color: #6b706a;
+  font-size: 0.75rem;
+  line-height: 1.55;
   overflow-wrap: anywhere;
-}
-
-.beyond-credit summary {
-  width: fit-content;
-  min-height: 44px;
-  padding-block: 0.625rem;
-  cursor: pointer;
-}
-
-.beyond-credit p {
-  margin: 0.25rem 0 0;
 }
 
 .beyond-credit a {
@@ -177,11 +132,9 @@
   text-underline-offset: 3px;
 }
 
-/* No flashing GIF before JavaScript applies the user's motion preference. */
-@media (prefers-reduced-motion: reduce) {
-  .deadlift-stage img:not([data-user-play="true"]) {
-    visibility: hidden;
-  }
+.beyond-credit a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 @media (max-width: 380px) {
