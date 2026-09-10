@@ -1,153 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f4f2ec" />
-  <meta name="description" content="Mohsen Abedelaal — Senior Software & AI Engineer working across AI systems, backend platforms, cloud architecture and product engineering." />
-  <meta property="og:title" content="Mohsen Abedelaal — Senior Software & AI Engineer" />
-  <meta property="og:description" content="AI systems, backend platforms, cloud architecture and production software." />
-  <meta property="og:type" content="website" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta name="description" content="Mohsen Abedelaal — Senior Software & AI Engineer. Explore my work in AI, cloud and product engineering, read my articles, or get in touch.">
+  <meta property="og:title" content="Mohsen Abedelaal — Software, AI & a little personality">
+  <meta property="og:description" content="Production software by day. Personal records by night. Selected projects, engineering notes and ways to work together.">
+  <meta property="og:type" content="website">
   <title>Mohsen Abedelaal — Senior Software & AI Engineer</title>
-  <link rel="icon" type="image/svg+xml" href="favicon-ai.svg" />
-  <link rel="alternate icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/portfolio.css" />
-  <link rel="stylesheet" href="css/typography.css" />
-  <link rel="stylesheet" href="css/sahha.css" />
-  <link rel="stylesheet" href="css/responsive-centering.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon-ai.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reimagined.css">
+  <script>try{const t=localStorage.getItem('portfolio-theme');if(t==='night'||t==='day')document.documentElement.dataset.theme=t;}catch{}</script>
+  <script src="js/reimagined.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Mohsen Abedelaal home">
-        <strong>Mohsen Abedelaal</strong>
-        <span>Senior Software & AI Engineer</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cv" href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Mohsen Abedelaal — home"><span class="brand-mark" aria-hidden="true">m<span>.</span></span><span>Mohsen Abedelaal</span></a>
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#capabilities">Expertise</a><a href="#writing-speaking">Notes & talks</a><a href="#about">About</a>
       </nav>
+      <div class="header-actions">
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to night theme" aria-pressed="false" hidden><span aria-hidden="true">◐</span><span id="theme-label">Night</span></button>
+        <a class="header-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy reveal">
-        <p class="kicker">Senior Software & AI Engineer</p>
-        <h1 id="hero-title">I turn complex engineering problems into <em>clear, production-ready systems.</em></h1>
-        <p class="hero-lede">AI systems, backend platforms, cloud architecture and full-stack products — from technical decisions to implementation and delivery.</p>
-        <div class="hero-actions">
-          <a class="action action-primary" href="#work">See selected work <span>↓</span></a>
-          <a class="action action-text" href="mailto:mohsen.abedelaal@gmail.com">Start a conversation ↗</a>
-        </div>
+    <section class="container hero" aria-labelledby="intro-title">
+      <div class="hero-content">
+        <div class="identity-line"><img src="images/avatar.jpeg" width="56" height="56" alt="Mohsen’s illustrated portrait"><div><p class="eyebrow">The engineer behind the screen</p><p>Beirut, Lebanon <span aria-hidden="true">·</span> Arabic & English</p></div></div>
+        <h1 id="intro-title">Senior Software<br>& <span>AI Engineer.</span></h1>
+        <p class="hero-description">I turn complicated problems into software that works. AI agents, backend platforms and cloud systems—from the first technical decision to production.</p>
+        <div class="hero-buttons"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button secondary" href="https://calendly.com/mohsen-abedelaal/30min" target="_blank" rel="noopener noreferrer" data-booking>Start a conversation <span aria-hidden="true">↗</span></a></div>
+        <p class="opportunities">Senior roles <span> / </span> Consulting <span> / </span> Product collaboration</p>
+        <a class="resume-link" href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a>
       </div>
-
-      <aside class="hero-profile reveal" aria-label="Professional profile summary">
-        <div class="portrait-wrap">
-          <img src="images/avatar.jpeg" alt="Mohsen Abedelaal" />
-        </div>
-        <dl class="profile-facts">
-          <div><dt>Focus</dt><dd>AI · Cloud · Backend · Product</dd></div>
-          <div><dt>Based in</dt><dd>Beirut, Lebanon</dd></div>
-          <div><dt>Work</dt><dd>Senior roles · Consulting · Product collaboration</dd></div>
-        </dl>
+      <aside class="shift-card" aria-labelledby="shift-title">
+        <div class="shift-top"><span class="eyebrow">One person. Two kinds of PR.</span><span class="shift-dot" aria-hidden="true"></span></div>
+        <h2 id="shift-title">Deadlifter by night.<br><span>PR pusher by day.</span></h2>
+        <figure class="lift-figure">
+          <div class="lift-stage">
+            <video id="lift-video" controls muted loop playsinline preload="none" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Deadlift_-_exercise_demonstration_video.webm/1280px--Deadlift_-_exercise_demonstration_video.webm.jpg" aria-label="Illustrative deadlift footage, not footage of Mohsen">
+              <source src="https://upload.wikimedia.org/wikipedia/commons/6/62/Deadlift_-_exercise_demonstration_video.webm" type="video/webm">
+              Your browser does not support this video. The source is linked below.
+            </video>
+            <span class="lift-tag">AFTER HOURS</span>
+            <button type="button" class="motion-toggle" id="motion-toggle" aria-controls="lift-video" aria-label="Play deadlift video" hidden><span aria-hidden="true">▶</span><span>Play</span></button>
+          </div>
+          <figcaption><span id="motion-status" aria-live="polite">Lifting inspiration</span><a href="https://commons.wikimedia.org/wiki/File:Deadlift_-_exercise_demonstration_video.webm" target="_blank" rel="noopener noreferrer">FitnessScape ↗</a> <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a></figcaption>
+        </figure>
+        <div class="pr-pair"><div><span class="pr-icon" aria-hidden="true">↗</span><p><small>At the keyboard</small><strong>Pull requests</strong></p></div><div><span class="pr-icon" aria-hidden="true">↑</span><p><small>Under the bar</small><strong>Personal records</strong></p></div></div>
+        <p class="shift-footer">Different kinds of heavy lifting. Same drive to improve.</p>
       </aside>
     </section>
 
-    <div class="shell capability-strip" aria-label="Core engineering areas">
-      <span>AI systems</span><span>Backend & APIs</span><span>Cloud architecture</span><span>Product engineering</span><span>Technical leadership</span>
-    </div>
+    <div class="container proof-strip"><span>Products I’ve worked on</span><p>Sahha <i>·</i> Konovo <i>·</i> anyIP <i>·</i> Cedar Oxygen <i>·</i> Zendy <i>·</i> Picacity</p></div>
 
-    <section class="shell section" id="work">
-      <header class="section-head reveal">
-        <div><p class="section-no">01 / Selected work</p><h2>Real products. Different industries. One engineering mindset.</h2></div>
-        <p>Products I’ve contributed to across health & nutrition AI, healthcare research, proxy infrastructure, fintech, academic research and operational AI.</p>
-      </header>
-
-      <div class="work-list">
-        <a class="work-item reveal" href="https://sahha-ai.netlify.app/" target="_blank" rel="noreferrer">
-          <figure class="work-media sahha-media" aria-label="Sahha AI health and nutrition application preview">
-            <div class="sahha-app" aria-hidden="true">
-              <div class="sahha-app-head"><strong>Sahha</strong><span class="sahha-award">AI Hackathon Award</span></div>
-              <div class="sahha-dashboard">
-                <div class="sahha-score-row">
-                  <div class="sahha-score"><span>86</span></div>
-                  <div class="sahha-score-copy"><small>Today’s health score</small><strong>Strong day — keep the momentum going.</strong></div>
-                </div>
-                <div class="sahha-stats">
-                  <div class="sahha-stat"><small>Calories</small><strong>1,840 kcal</strong></div>
-                  <div class="sahha-stat"><small>Protein</small><strong>132 g</strong></div>
-                  <div class="sahha-stat"><small>Hydration</small><strong>2.3 / 3 L</strong></div>
-                </div>
-                <div class="sahha-actions">
-                  <div class="sahha-action">Scan barcode → food score</div>
-                  <div class="sahha-action">Ask AI nutrition assistant</div>
-                  <div class="sahha-action">Weekly meal plan</div>
-                  <div class="sahha-action">Generate shopping list</div>
-                </div>
-              </div>
-            </div>
-          </figure>
-          <div class="work-copy">
-            <div class="work-meta"><span>01</span><span>Health · Nutrition · AI</span></div>
-            <h3>Sahha</h3>
-            <p>Gamified health and nutrition tracker with AI assistance, barcode food scanning and scoring, calorie and macro tracking, hydration goals, nutrition education, personalized weekly meal planning and automatically generated grocery lists.</p>
-            <span class="award-note">Recognized in an AI hackathon</span>
-            <span class="work-link">Open project ↗</span>
-          </div>
-        </a>
-
-        <a class="work-item reveal" href="https://konovo.com" target="_blank" rel="noreferrer">
-          <figure class="work-media"><img src="https://konovo.com/wp-content/uploads/2025/09/Home-2.webp" alt="Konovo healthcare research platform" loading="lazy" /></figure>
-          <div class="work-copy"><div class="work-meta"><span>02</span><span>Healthcare research</span></div><h3>Konovo</h3><p>Technology-enabled healthcare research platform connecting life-science teams with healthcare audiences and faster research workflows.</p><span class="work-link">Visit product ↗</span></div>
-        </a>
-
-        <a class="work-item reveal" href="https://anyip.io" target="_blank" rel="noreferrer">
-          <figure class="work-media work-media-logo"><img src="https://anyip.io/media/f/289204776307124/422x260/ae919ef3a6/logo.svg" alt="anyIP logo" loading="lazy" /></figure>
-          <div class="work-copy"><div class="work-meta"><span>03</span><span>Proxy infrastructure</span></div><h3>anyIP</h3><p>Mobile and residential proxy platform built for scraping, automation, testing and reliable geo-targeted internet workflows.</p><span class="work-link">Visit product ↗</span></div>
-        </a>
-
-        <a class="work-item reveal" href="https://cedaroxygen.com" target="_blank" rel="noreferrer">
-          <figure class="work-media cedar-media" aria-label="Cedar Oxygen"><span class="cedar-symbol" aria-hidden="true"></span><span class="cedar-wordmark">CEDAR OXYGEN</span></figure>
-          <div class="work-copy"><div class="work-meta"><span>04</span><span>FinTech / trade finance</span></div><h3>Cedar Oxygen</h3><p>Economic recovery and trade-finance platform supporting Lebanese manufacturers with working-capital and supply-chain financing.</p><span class="work-link">Visit product ↗</span></div>
-        </a>
-
-        <a class="work-item reveal" href="https://zendy.io" target="_blank" rel="noreferrer">
-          <figure class="work-media"><img src="https://zendy.io/_next/image?q=75&amp;url=%2Fimages%2FmultipleDevice.webp&amp;w=1080" alt="Zendy academic research platform across devices" loading="lazy" /></figure>
-          <div class="work-copy"><div class="work-meta"><span>05</span><span>Research / AI</span></div><h3>Zendy</h3><p>AI-powered research library helping students and researchers discover, access and work with academic content across disciplines.</p><span class="work-link">Visit product ↗</span></div>
-        </a>
-
-        <a class="work-item reveal" href="https://picacity.ai" target="_blank" rel="noreferrer">
-          <figure class="work-media"><img src="https://store-images.s-microsoft.com/image/apps.1961.cf0056c8-7827-4a3a-8614-2990037a3006.864b5bbe-c9c6-43b1-9c44-be0de2cc281d.274ec1a2-009f-4d7d-8650-35908be858a5" alt="Picacity AI districtnex smart-city platform dashboard" loading="lazy" /></figure>
-          <div class="work-copy"><div class="work-meta"><span>06</span><span>Operational AI / smart cities</span></div><h3>Picacity AI</h3><p>Operational AI platform behind districtnex™, unifying assets, data and decision workflows across buildings, campuses, districts and cities.</p><span class="work-link">Visit product ↗</span></div>
-        </a>
+    <section id="work" class="container section" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Less talk. More shipped.</h2></div><p>A few products I’ve contributed to.<br>Explore the actual platforms below.</p></div>
+      <div class="project-toolbar" id="project-toolbar" hidden><div class="filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All work <span>6</span></button><button type="button" data-filter="ai" aria-pressed="false">AI & data</button><button type="button" data-filter="platform" aria-pressed="false">Platforms</button></div><p id="project-count" aria-live="polite">6 projects</p></div>
+      <div class="projects" id="projects">
+        <article class="project project-featured" data-category="ai"><a href="https://sahha-ai.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Explore Sahha, opens in a new tab">
+          <div class="project-visual sahha-visual" role="img" aria-label="Sahha: scan food, understand nutrition and plan meals"><span class="award">✦ AI hackathon award</span><div class="sahha-brand"><span aria-hidden="true">♡</span> Sahha<span class="brand-period">.</span></div><div class="sahha-steps"><span>Scan</span><i aria-hidden="true">→</i><span>Understand</span><i aria-hidden="true">→</i><span>Plan</span></div></div>
+          <div class="project-copy"><div class="project-kicker"><span>Health & nutrition · AI</span><span aria-hidden="true">↗</span></div><h3>Sahha</h3><p>Making healthy habits a little more fun. AI assistance, barcode food scoring, calories and hydration, with weekly meal plans and grocery lists.</p><span class="project-link">Explore the app <span aria-hidden="true">↗</span></span></div>
+        </a></article>
+        <article class="project" data-category="ai"><a href="https://konovo.com" target="_blank" rel="noopener noreferrer" aria-label="Explore Konovo, opens in a new tab"><div class="project-visual konovo-visual"><span class="visual-fallback">Konovo</span><img src="https://konovo.com/wp-content/uploads/2025/04/Konovo_Platform-1024x632.png" loading="lazy" decoding="async" alt="Konovo healthcare research platform" width="1024" height="632"></div><div class="project-copy"><div class="project-kicker"><span>Healthcare research</span><span aria-hidden="true">↗</span></div><h3>Konovo</h3><p>Technology-enabled research connecting life-science teams with healthcare audiences and faster research workflows.</p><span class="project-link">Visit product <span aria-hidden="true">↗</span></span></div></a></article>
+        <article class="project" data-category="platform"><a href="https://anyip.io" target="_blank" rel="noopener noreferrer" aria-label="Explore anyIP, opens in a new tab"><div class="project-visual logo-visual anyip-visual"><span class="visual-fallback">anyIP<span>.</span></span><img src="https://anyip.io/media/f/289204776307124/422x260/ae919ef3a6/logo.svg" loading="lazy" decoding="async" alt="anyIP logo" width="422" height="260"></div><div class="project-copy"><div class="project-kicker"><span>Proxy infrastructure</span><span aria-hidden="true">↗</span></div><h3>anyIP</h3><p>Mobile and residential proxy infrastructure for automation, testing and geo-targeted internet workflows.</p><span class="project-link">Visit product <span aria-hidden="true">↗</span></span></div></a></article>
+        <article class="project" data-category="platform"><a href="https://cedaroxygen.com" target="_blank" rel="noopener noreferrer" aria-label="Explore Cedar Oxygen, opens in a new tab"><div class="project-visual logo-visual cedar-visual"><span class="visual-fallback">Cedar Oxygen</span><img src="https://cedaroxygen.com/wp-content/uploads/2020/06/Cedar-Oxygen_Logo.png" loading="lazy" decoding="async" alt="Cedar Oxygen logo" width="600" height="160"></div><div class="project-copy"><div class="project-kicker"><span>Fintech · Trade finance</span><span aria-hidden="true">↗</span></div><h3>Cedar Oxygen</h3><p>A trade-finance platform supporting Lebanese manufacturers with working-capital and supply-chain financing.</p><span class="project-link">Visit product <span aria-hidden="true">↗</span></span></div></a></article>
+        <article class="project" data-category="ai"><a href="https://zendy.io" target="_blank" rel="noopener noreferrer" aria-label="Explore Zendy, opens in a new tab"><div class="project-visual zendy-visual"><span class="visual-fallback">zendy</span><img src="https://zendy.io/_next/image?q=75&amp;url=%2Fimages%2FmultipleDevice.webp&amp;w=1080" loading="lazy" decoding="async" alt="Zendy research platform on multiple devices" width="1080" height="660"></div><div class="project-copy"><div class="project-kicker"><span>Research · AI</span><span aria-hidden="true">↗</span></div><h3>Zendy</h3><p>An AI-powered research library helping students and researchers discover and work with academic content.</p><span class="project-link">Visit product <span aria-hidden="true">↗</span></span></div></a></article>
+        <article class="project" data-category="ai"><a href="https://picacity.ai" target="_blank" rel="noopener noreferrer" aria-label="Explore Picacity AI, opens in a new tab"><div class="project-visual picacity-visual"><span class="visual-fallback">Picacity AI</span><img src="https://store-images.s-microsoft.com/image/apps.1961.cf0056c8-7827-4a3a-8614-2990037a3006.864b5bbe-c9c6-43b1-9c44-be0de2cc281d.274ec1a2-009f-4d7d-8650-35908be858a5" loading="lazy" decoding="async" alt="Picacity districtnex platform dashboard" width="1000" height="600"></div><div class="project-copy"><div class="project-kicker"><span>Operational AI · Smart cities</span><span aria-hidden="true">↗</span></div><h3>Picacity AI</h3><p>Operational AI behind districtnex, connecting assets, data and decisions across buildings, campuses and cities.</p><span class="project-link">Visit product <span aria-hidden="true">↗</span></span></div></a></article>
       </div>
     </section>
 
-    <section class="shell section" id="capabilities"><header class="section-head compact reveal"><div><p class="section-no">02 / Capabilities</p><h2>What I work on.</h2></div><p>Broad enough to see the whole system. Deep enough to own the engineering decisions inside it.</p></header><div class="capability-list"><article class="capability-row reveal"><span class="capability-index">A</span><h3>AI systems</h3><p>Agent workflows, RAG, MCP and tool integrations, evaluation, orchestration and production LLM services.</p></article><article class="capability-row reveal"><span class="capability-index">B</span><h3>Backend & platform</h3><p>Python, FastAPI, Node.js, TypeScript, APIs, integrations, asynchronous workflows and service boundaries.</p></article><article class="capability-row reveal"><span class="capability-index">C</span><h3>Cloud architecture</h3><p>AWS, containers, serverless, infrastructure as code, CI/CD, observability, reliability and scaling.</p></article><article class="capability-row reveal"><span class="capability-index">D</span><h3>Product engineering</h3><p>React and Next.js products connected to real backend systems, data, authentication and cloud infrastructure.</p></article><article class="capability-row reveal"><span class="capability-index">E</span><h3>Architecture & leadership</h3><p>System design, trade-off analysis, technical reviews, mentoring and ownership from problem to production.</p></article></div></section>
+    <section class="expertise-wrap" id="capabilities" aria-labelledby="expertise-title"><div class="container section">
+      <div class="section-heading"><div><p class="eyebrow">02 / Expertise</p><h2 id="expertise-title">From idea to running system.</h2></div><p>One engineer. A view of the whole product.</p></div>
+      <div class="expertise-grid">
+        <article><span class="expertise-symbol" aria-hidden="true">✳</span><h3>Make AI useful.</h3><p>Agents, retrieval, tool integrations and evaluation. AI features designed as part of a real product—not a demo on the side.</p><p class="stack-line">Python · FastAPI · RAG · MCP</p></article>
+        <article><span class="expertise-symbol" aria-hidden="true">⌘</span><h3>Build the foundations.</h3><p>Backend APIs, asynchronous workflows, cloud architecture and deployment. Clear service boundaries and systems you can operate.</p><p class="stack-line">AWS · CDK · Docker · PostgreSQL</p></article>
+        <article><span class="expertise-symbol" aria-hidden="true">↗</span><h3>Bring it together.</h3><p>Full-stack product development, technical decisions and delivery ownership. From the interface to the infrastructure behind it.</p><p class="stack-line">TypeScript · React · Next.js</p></article>
+      </div>
+      <div class="working-note"><span>How I work</span><p>Understand the problem <i>→</i> Make the trade-offs <i>→</i> Build, test, ship <i>→</i> Improve</p></div>
+    </div></section>
 
-    <section class="shell section" id="experience"><header class="section-head compact reveal"><div><p class="section-no">03 / Experience</p><h2>Built from operations upward.</h2></div><p>That background is why I care about reliability, observability and what happens after software reaches production.</p></header><div class="experience-list"><article class="experience-row reveal"><time>2021 — now</time><div><h3>Software engineering</h3><p>Production applications across backend APIs, frontend systems, cloud infrastructure, automation and AI-enabled workflows.</p></div><span>Software · Cloud · AI</span></article><article class="experience-row reveal"><time>2019 — 2020</time><div><h3>Network operations engineering</h3><p>Operational engineering that shaped how I think about monitoring, reliability, incident response and production ownership.</p></div><span>Operations · Reliability</span></article><article class="experience-row reveal"><time>2014 — 2018</time><div><h3>Electrical project engineering</h3><p>Hands-on engineering experience that built a foundation in systems thinking, coordination, execution and accountability.</p></div><span>Systems · Delivery</span></article></div></section>
+    <section class="container section" id="writing-speaking" aria-labelledby="notes-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / Writing & speaking</p><h2 id="notes-title">Built it. Learned it. Shared it.</h2></div><a class="text-link" href="https://medium.com/@mohsen.abedelaal" target="_blank" rel="noopener noreferrer">All articles on Medium ↗</a></div>
+      <div class="notes-grid">
+        <div class="notes-column"><h3>From the keyboard <span>Writing</span></h3>
+          <a class="note" href="https://medium.com/@mohsen.abedelaal/one-endpoint-zero-servers-giving-our-agents-a-governed-web-search-with-bedrock-agentcore-gateway-82d61b1fca27" target="_blank" rel="noopener noreferrer"><p class="note-meta">Latest article · AI & AWS</p><h4>One Endpoint, Zero Servers <span aria-hidden="true">↗</span></h4><p>Giving our agents governed web search with Bedrock AgentCore Gateway.</p></a>
+          <a class="note" href="https://medium.com/@mohsen.abedelaal/serverless-id-verification-using-aws-lambda-2e27fc8756f3" target="_blank" rel="noopener noreferrer"><p class="note-meta">Article · Serverless</p><h4>Serverless ID Verification Using AWS Lambda <span aria-hidden="true">↗</span></h4><p>A practical approach to building an identity-verification workflow without managing servers.</p></a>
+        </div>
+        <div class="notes-column"><h3>With the community <span>Talks & workshops</span></h3>
+          <a class="note" href="https://www.linkedin.com/posts/laura-jardine-paterson_this-saturday-join-us-in-the-beqaa-i-will-activity-7341019649200836609-sCXX" target="_blank" rel="noopener noreferrer"><p class="note-meta">Event post · June 2025</p><h4>Beqaa Tech Session <span aria-hidden="true">↗</span></h4><p>Community learning and practical technology conversations in the Beqaa.</p></a>
+          <a class="note" href="https://www.linkedin.com/posts/develeb_build-scalable-apps-no-servers-required-activity-7239611969819865088-nGhP" target="_blank" rel="noopener noreferrer"><p class="note-meta">Workshop post · September 2024</p><h4>Build Scalable Apps—No Servers Required <span aria-hidden="true">↗</span></h4><p>A workshop on serverless applications and cloud engineering.</p></a>
+        </div>
+      </div>
+    </section>
 
-    <section class="shell section about-section" id="about"><header class="section-head compact reveal"><div><p class="section-no">04 / About</p><h2>Engineer. Architect. Builder.</h2></div></header><div class="about-grid"><div class="about-copy reveal"><p>I enjoy engineering problems where the answer is not simply “use framework X.” I care about service boundaries, failure modes, maintainability, observability, developer experience and choosing the simplest architecture that can do the job well.</p><p>My direction is deeper into AI engineering and system architecture while continuing to work across backend, cloud and product delivery.</p></div><dl class="about-facts reveal"><div><dt>Education</dt><dd>Master's in Electrical Engineering</dd></div><div><dt>Credentials</dt><dd>AWS Cloud Practitioner · AWS Developer Associate</dd></div><div><dt>Languages</dt><dd>Arabic · English</dd></div><div><dt>Core stack</dt><dd>Python · TypeScript · AWS · React / Next.js · PostgreSQL · Docker</dd></div></dl></div></section>
+    <section class="container section about" id="about" aria-labelledby="about-title">
+      <div class="about-person"><p class="eyebrow">04 / The human part</p><h2 id="about-title">Curious by default.<br>Consistent by choice.</h2><div class="about-identity"><img src="images/avatar.jpeg" width="88" height="88" alt="Mohsen’s illustrated portrait" loading="lazy"><div><strong>Mohsen Abedelaal</strong><span>Engineer. Architect. Builder.</span></div></div><p>I care about the decisions behind the code: maintainability, failure modes and the simplest architecture that does the job well.</p><p>Outside work, I’m into strength training. At the keyboard or under the bar, I like showing up and getting a little better.</p><div class="credential"><span>Education</span><strong>Master’s in Electrical Engineering</strong></div><div class="credential"><span>Credentials</span><strong>AWS Cloud Practitioner<br>AWS Developer Associate</strong></div></div>
+      <div id="experience" class="experience"><div class="experience-title"><h3>The path so far</h3><a class="text-link" href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noopener noreferrer">Full résumé ↗</a></div><ol class="timeline"><li><p class="note-meta">2021 — present</p><h4>Software engineering</h4><p>Backend APIs, frontend systems, cloud infrastructure, automation and AI-enabled workflows.</p></li><li><p class="note-meta">2019 — 2020</p><h4>Network operations engineering</h4><p>Monitoring, reliability, incident response and production ownership.</p></li><li><p class="note-meta">2014 — 2018</p><h4>Electrical project engineering</h4><p>A foundation in systems thinking, coordination and hands-on delivery.</p></li></ol></div>
+    </section>
 
-    <section class="shell contact-section reveal" id="contact"><p class="section-no">05 / Contact</p><div class="contact-main"><h2>Have an engineering problem or opportunity worth discussing?</h2><a class="contact-email" href="mailto:mohsen.abedelaal@gmail.com">mohsen.abedelaal@gmail.com ↗</a></div><div class="contact-meta"><span>Senior roles · Consulting · Product collaboration</span><nav aria-label="Contact links"><a href="https://github.com/mohsenabedelaal" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="Mohsen_Abedelaal_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a></nav></div></section>
+    <section class="container contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">05 / Next conversation</p><h2 id="contact-title">Good work starts<br>with a conversation.</h2><p>An engineering role, a product idea or a system that needs a fresh pair of eyes. Tell me what you’re working on.</p><div class="contact-tags"><span>Senior roles</span><span>Consulting</span><span>Collaboration</span></div></div><div class="contact-panel"><a class="button contact-book" href="https://calendly.com/mohsen-abedelaal/30min" target="_blank" rel="noopener noreferrer" data-booking><span><strong>Book a 30-minute call</strong><small>Pick a time through Calendly</small></span><span aria-hidden="true">↗</span></a><a class="email" href="mailto:mohsen.abedelaal@gmail.com">mohsen.abedelaal@gmail.com <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email" type="button" hidden>Copy email address</button><p id="copy-status" class="copy-status" aria-live="polite"></p></div></section>
   </main>
-
-  <footer class="shell footer"><span>© <span id="year"></span> Mohsen Abedelaal</span><span>Less, but useful.</span><a href="#top">Back to top ↑</a></footer>
-  <script src="js/portfolio.js"></script>
+  <footer class="container footer"><p>© <span id="year">2026</span> Mohsen Abedelaal</p><nav aria-label="Social profiles"><a href="https://github.com/mohsenabedelaal" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mohsen-abdulaal-586a97119" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://medium.com/@mohsen.abedelaal" target="_blank" rel="noopener noreferrer">Medium ↗</a></nav><a href="#top">Back to top ↑</a></footer>
+  <dialog id="booking-dialog" aria-labelledby="booking-title" aria-describedby="booking-description"><div class="dialog-head"><div><h2 id="booking-title">Let’s find a time.</h2><p id="booking-description">A 30-minute conversation, scheduled through Calendly.</p></div><button type="button" id="booking-close" aria-label="Close booking window">×</button></div><p class="dialog-fallback">Calendar not loading? <a href="https://calendly.com/mohsen-abedelaal/30min" target="_blank" rel="noopener noreferrer">Open Calendly in a new tab ↗</a></p><iframe id="booking-frame" title="Schedule a call with Mohsen Abedelaal" data-src="https://calendly.com/mohsen-abedelaal/30min" referrerpolicy="strict-origin-when-cross-origin"></iframe></dialog>
 </body>
 </html>

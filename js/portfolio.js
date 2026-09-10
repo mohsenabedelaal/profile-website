@@ -177,54 +177,6 @@ if (contactSection && !document.getElementById('booking-dialog')) {
   });
 }
 
-// Beyond the code: a small personal detail in About.
-if (aboutSection && !document.querySelector('.beyond-card')) {
-  const beyondStyles = document.createElement('link');
-  beyondStyles.rel = 'stylesheet';
-  beyondStyles.href = 'css/beyond-code.css';
-  document.head.appendChild(beyondStyles);
-
-  const aboutGrid = aboutSection.querySelector('.about-grid');
-  const aboutFacts = aboutSection.querySelector('.about-facts');
-
-  if (aboutGrid && aboutFacts) {
-    const aboutContent = document.createElement('div');
-    aboutContent.className = 'about-content reveal';
-    aboutContent.innerHTML = `
-      <aside class="beyond-card" aria-labelledby="beyond-title">
-        <p class="beyond-eyebrow">Beyond the code / 02:00 AM energy</p>
-        <h3 id="beyond-title"><span>Deadlifter by night.</span><span>PR pusher by day.</span></h3>
-
-        <div class="beyond-duo">
-          <figure class="deadlift-player">
-            <div class="deadlift-stage">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Man_Lifting_Barbell_Deadlift_GIF_Animation_Loop.gif"
-                width="111"
-                height="100"
-                loading="lazy"
-                alt="Looping illustration of a deadlifter lifting a barbell"
-              />
-            </div>
-            <figcaption class="deadlift-caption">night shift</figcaption>
-          </figure>
-
-          <dl class="pr-meanings">
-            <div><dt>By day</dt><dd>Pull requests</dd></div>
-            <div><dt>By night</dt><dd>Personal records</dd></div>
-          </dl>
-        </div>
-
-        <p class="beyond-note">Same obsession: make the next rep cleaner than the last.</p>
-        <p class="beyond-credit">Deadlift animation: <a href="https://commons.wikimedia.org/wiki/File:Man_Lifting_Barbell_Deadlift_GIF_Animation_Loop.gif" target="_blank" rel="noreferrer">Videoplasty.com / Wikimedia Commons, CC BY-SA 4.0</a>.</p>
-      </aside>
-    `;
-
-    aboutFacts.replaceWith(aboutContent);
-    aboutContent.appendChild(aboutFacts);
-  }
-}
-
 const syncHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 16);
