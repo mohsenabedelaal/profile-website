@@ -89,61 +89,6 @@
     if (image.complete) loaded();
   });
 
-  // Real lifting footage, with explicit playback control and no surprise audio.
-  const video = document.getElementById('lift-video');
-  const motionButton = document.getElementById('motion-toggle');
-  const motionStatus = document.getElementById('motion-status');
-  if (video && motionButton) {
-    let userPaused = reducedMotion.matches || Boolean(navigator.connection?.saveData);
-    let visible = false;
-    let failed = false;
-    video.muted = true;
-    video.controls = false;
-    motionButton.hidden = false;
-    const syncPlayback = () => {
-      const playing = !video.paused && !video.ended;
-      motionButton.innerHTML = playing ? '<span aria-hidden="true">Ⅱ</span><span>Pause</span>' : '<span aria-hidden="true">▶</span><span>Play</span>';
-      motionButton.setAttribute('aria-label', playing ? 'Pause deadlift video' : 'Play deadlift video');
-    };
-    const play = async () => {
-      if (failed || userPaused || !visible || document.hidden) return;
-      try { await video.play(); } catch { /* Browser autoplay restrictions: keep Play available. */ }
-      syncPlayback();
-    };
-    motionButton.addEventListener('click', async () => {
-      userPaused = !video.paused;
-      if (userPaused) video.pause();
-      else {
-        visible = true;
-        await play();
-      }
-      syncPlayback();
-    });
-    video.addEventListener('play', syncPlayback);
-    video.addEventListener('pause', syncPlayback);
-    video.addEventListener('error', () => {
-      failed = true;
-      motionButton.hidden = true;
-      if (motionStatus) motionStatus.textContent = 'Video unavailable · view source →';
-    });
-    video.querySelector('source')?.addEventListener('error', () => {
-      failed = true;
-      motionButton.hidden = true;
-      if (motionStatus) motionStatus.textContent = 'Video unavailable · view source →';
-    });
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
-        visible = entries[0].isIntersecting;
-        if (visible) play(); else video.pause();
-      }, { threshold: 0.25 });
-      observer.observe(video);
-    } else { visible = true; play(); }
-    document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); else play(); });
-    reducedMotion.addEventListener('change', event => { if (event.matches) { userPaused = true; video.pause(); } });
-    if (reducedMotion.matches && motionStatus) motionStatus.textContent = 'Motion paused by preference';
-    syncPlayback();
-  }
-
   // Booking still works as a normal external link without dialog support / JS.
   const dialog = document.getElementById('booking-dialog');
   const frame = document.getElementById('booking-frame');

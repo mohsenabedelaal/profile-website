@@ -24,3 +24,24 @@
 @media(max-width:520px){.container{width:calc(100% - 32px)}.header-inner{gap:12px}.brand{font-size:.875rem;gap:8px}.brand-mark{font-size:1.7rem}.theme-switch{padding:8px 9px;gap:6px}.theme-switch>span:first-child{display:none}.menu-toggle{padding:8px 9px}.header-actions{gap:6px}.identity-line{gap:12px}.identity-line .eyebrow{font-size:.8125rem}.identity-line>div>p:last-child{font-size:.8125rem}.hero h1{font-size:2.45rem}.hero-description{font-size:1rem}.hero-buttons{flex-direction:column}.button{width:100%}.opportunities{font-size:.875rem}.opportunities>span{padding:0 2px}.shift-card{padding:18px}.shift-card h2{font-size:1.55rem}.shift-top .eyebrow{font-size:.8125rem}.pr-pair{gap:10px}.pr-pair>div{gap:8px}.pr-pair>div+div{padding-left:10px}.pr-pair strong{font-size:.875rem}.pr-icon{font-size:1.4rem}.proof-strip p{line-height:2}.proof-strip i{margin-inline:7px}.project-toolbar{align-items:flex-start;flex-direction:column;gap:8px}.filters{width:100%;gap:3px}.filters button{flex:1;padding:8px 7px;font-size:.875rem}.projects{grid-template-columns:1fr;gap:18px}.project-copy{padding:20px}.project-visual{aspect-ratio:16/9}.notes-column>h3{flex-wrap:wrap;gap:6px}.credential{grid-template-columns:90px minmax(0,1fr);gap:14px}.experience-title{flex-wrap:wrap;gap:4px}.contact{padding:24px}.contact h2{font-size:2rem}.contact-tags{gap:6px}.contact-tags>span{font-size:.8125rem}.contact-book{padding:16px}.footer nav{gap:18px}.footer>a{margin-left:0}#booking-dialog{width:calc(100% - 16px);height:94dvh;max-height:94dvh}.dialog-head{padding:16px;gap:12px}.dialog-fallback{padding:10px 16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.project:hover,.button:hover{transform:none}}
 @media print{.header,.shift-card,.filters,.project-toolbar,.copy-email,dialog{display:none!important}body{background:#fff;color:#111}.container{width:100%}.hero,.about,.contact{display:block}.section{padding-block:24px}.project{break-inside:avoid}.project-visual{display:none}.contact{background:#fff;color:#111;border:1px solid #ddd}.hero h1{font-size:30pt}}
+
+
+/* User-provided lifting photo: original pixels are untouched; CSS only scales it proportionally. */
+.lift-stage.lift-stage-photo{
+  aspect-ratio:auto !important;
+  padding:0;
+  overflow:visible;
+  background:transparent;
+}
+.lift-stage-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  filter:none;
+}
+.lift-figure:has(.lift-stage-photo) figcaption{
+  justify-content:flex-start;
+}
