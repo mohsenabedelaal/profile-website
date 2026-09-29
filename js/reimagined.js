@@ -9,6 +9,9 @@
   // Theme is a preference, never a gate to professional or personal content.
   const themeButton = document.getElementById('theme-toggle');
   const themeLabel = document.getElementById('theme-label');
+  const nightSound = new Audio('audio/im-batman.mp3');
+  nightSound.preload = 'auto';
+  nightSound.volume = 0.55;
   function applyTheme(theme) {
     root.dataset.theme = theme;
     const night = theme === 'night';
@@ -24,6 +27,15 @@
       const theme = root.dataset.theme === 'night' ? 'day' : 'night';
       applyTheme(theme);
       try { localStorage.setItem('portfolio-theme', theme); } catch { /* Storage may be blocked. */ }
+
+      // User-triggered Easter egg: play only when entering Night mode.
+      if (theme === 'night') {
+        try {
+          nightSound.pause();
+          nightSound.currentTime = 0;
+          nightSound.play().catch(() => { /* Audio can be blocked by browser/device settings. */ });
+        } catch { /* Theme switching should always work even if audio cannot. */ }
+      }
     });
   }
 
