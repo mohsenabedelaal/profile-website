@@ -220,3 +220,65 @@
     display:none;
   }
 }
+
+
+/* Landscape deadlift card layout */
+.shift-card{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+    "top"
+    "title"
+    "photo"
+    "pair"
+    "footer";
+  gap:0;
+  max-width:500px;
+}
+.shift-top{grid-area:top}
+.shift-card h2{grid-area:title}
+.lift-figure{
+  grid-area:photo;
+  width:100%;
+  margin-top:2px;
+}
+.lift-stage.lift-stage-photo{
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+}
+.lift-stage-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.pr-pair{
+  grid-area:pair;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+.pr-pair>div{
+  padding:0;
+}
+.pr-pair>div+div{
+  border-top:0;
+  border-left:1px solid #3b4f46;
+  padding-left:16px;
+}
+.shift-footer{
+  grid-area:footer;
+}
+@media(max-width:820px){
+  .shift-card{
+    max-width:620px;
+  }
+}
+@media(max-width:560px){
+  .shift-card{
+    grid-template-columns:1fr;
+  }
+  .pr-pair{
+    grid-template-columns:1fr 1fr;
+  }
+}
